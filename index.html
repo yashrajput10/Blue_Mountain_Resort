@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue_Mountain_Resort</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--costome font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Custome Css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header
+        class="fixed top-5 w-full bg-black bg-opacity-0 backdrop-blur-sm text-white flex items-center justify-between px-8 py-4 z-50">
+        <!-- Logo and Title -->
+        <div class="flex items-center">
+            <img src="./images/logo.png" alt="Blue Mountain Logo" class="h-12">
+        </div>
+
+        <!-- Navigation Menu -->
+        <button>
+            <div class="text-2xl cursor-pointer">
+                ☰
+            </div>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen bg-cover bg-center"
+        style="background-image: url('./images/homebanner.png?height=1080&width=1920');">
+        <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+            <p class="mb-8 text-white text-sm/[50px]">Holiday Like Never Before</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Blue Mountain Resort And Hospitality</h1>
+            <button
+                class="bg-yellow-500 text-black px-8 py-3 rounded-full text-lg font-semibold hover:bg-yellow-600 transition duration-300">Book
+                Now</button>
+        </div>
+    </section>
+</body>
+
+</html>
