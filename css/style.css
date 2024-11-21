@@ -16,3 +16,27 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+.herolayout{
+background-color:rgb(34,20,9);
+}
+
+.herolayoutb{
+    border: 1px solid rgb(58, 36, 19) !important;
+}
+
+.amber{
+    background-color: rgb(170,132,83) !important;
+}
+
+.layout3{
+width: 1500px;
+height: 576px;
+top: 1944px;
+left: 240px;
+gap: 0px;
+opacity: 0px;
+justify-content: center;
+margin-top: 20px;
+
+}
