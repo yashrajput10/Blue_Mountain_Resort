@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Mountain Resort</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="bg-gray-900 text-white">
+
+<body class="text-white">
     <!-- Header -->
     <header class="fixed w-full z-50 bg-transparent">
         <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
-            <img src="/placeholder.svg?height=40&width=150" alt="Blue Mountain Logo" class="h-10">
+            <img src="../images/logo.png" alt="Blue Mountain Logo" class="h-10">
             <button id="menuToggle" class="text-white focus:outline-none">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
@@ -27,38 +30,36 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative h-screen">
-        <img src="/placeholder.svg?height=1080&width=1920" alt="Luxury Room" class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <h1 class="text-5xl md:text-7xl font-serif">Destinations</h1>
+    <section class="relative about-h flex items-center justify-center">
+        <div class="absolute inset-0">
+            <img src="../images/Destinationsbaner.png" alt="Hotel Room" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-80"></div>
         </div>
+        <h1 class="text-5xl md:text-7xl font-bold relative z-10">Destinations</h1>
     </section>
 
     <!-- Destinations Grid -->
     <section class="py-20 px-4">
         <div class="container mx-auto">
             <h2 class="text-center mb-2 text-3xl"><span class="text-amber-400">Our insertional</span> Destinations</h2>
-            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non efficitur eros, id placerat ipsum.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Nulla non efficitur eros, id placerat ipsum.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <!-- Destination Cards -->
-                <div class="group relative overflow-hidden rounded-lg">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Maldives" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-                    <div class="absolute bottom-4 left-4">
-                        <h3 class="text-xl font-bold">Maldives</h3>
-                        <div class="flex text-amber-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <img class="h-48 object-cover" src="../images/Rectangle 3.png" alt="Maldives">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold mb-2">Maldives</h2>
+                        <div class="text-amber-500 flex">
+                            ★★★★★
                         </div>
                     </div>
                 </div>
                 <!-- Repeat similar cards for other destinations -->
                 <div class="group relative overflow-hidden rounded-lg">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Canada" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <img src="../images/canada.png" alt="Canada"
+                        class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
                     <div class="absolute bottom-4 left-4">
                         <h3 class="text-xl font-bold">Canada</h3>
@@ -72,10 +73,60 @@
                     </div>
                 </div>
                 <div class="group relative overflow-hidden rounded-lg">
-                    <img src="/placeholder.svg?height=400&width=600" alt="Dubai" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <img src="../images/canada.png" alt="Dubai"
+                        class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
                     <div class="absolute bottom-4 left-4">
                         <h3 class="text-xl font-bold">Dubai</h3>
+                        <div class="flex text-amber-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Destination Cards -->
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="../images/bankok.png" alt="Bangkok"
+                        class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-xl font-bold">Bangkok</h3>
+                        <div class="flex text-amber-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar cards for other destinations -->
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="../images/kohsumi.png" alt="kohSumi"
+                        class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-xl font-bold">koh Sumi</h3>
+                        <div class="flex text-amber-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="../images/khosumi2.png" alt="kohSumi"
+                        class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-xl font-bold">koh Sumi</h3>
                         <div class="flex text-amber-400">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -90,12 +141,14 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-20 bg-black bg-opacity-50">
-        <div class="container mx-auto px-4">
+
+    <section class="py-20 relative" style="background-image: url('../images/swimin.png');">
+        <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+        <div class="absolute inset-0 container mx-auto p-10 text-center">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>
                     <h3 class="text-4xl font-bold text-amber-400">22,868</h3>
-                    <p class="text-sm text-gray-400">Happy Holiday makers</p>
+                    <p class="text-sm text-white-400">Happy Holiday makers</p>
                 </div>
                 <div>
                     <h3 class="text-4xl font-bold text-amber-400">192</h3>
@@ -114,33 +167,33 @@
     </section>
 
     <!-- Where Next Section -->
+
     <section class="py-20 px-4">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl mb-2">Where <span class="text-amber-400">Next</span> ?</h2>
-            <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Our team of experts offer mouth watering special offers. From adventurous elephant trekking to near-inspiring beaches, our collection of destinations is unmatched.</p>
-            
+            <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Our team of experts offer mouth watering special offers.
+                From adventurous elephant trekking to near-inspiring beaches, our collection of destinations is
+                unmatched.</p>
+
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div class="relative overflow-hidden rounded-lg h-64 group">
-                    <img src="/placeholder.svg?height=300&width=400" alt="North Zone" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                    <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
                         <h3 class="text-xl font-bold">North Zone</h3>
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-lg h-64 group">
-                    <img src="/placeholder.svg?height=300&width=400" alt="South Zone" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+
+                    <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
                         <h3 class="text-xl font-bold">South Zone</h3>
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-lg h-64 group">
-                    <img src="/placeholder.svg?height=300&width=400" alt="East Zone" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                    <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
                         <h3 class="text-xl font-bold">East Zone</h3>
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-lg h-64 group">
-                    <img src="/placeholder.svg?height=300&width=400" alt="West Zone" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                    <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
                         <h3 class="text-xl font-bold">West Zone</h3>
                     </div>
                 </div>
@@ -149,34 +202,40 @@
     </section>
 
     <!-- Food and Hospitality Section -->
-     
+
     <section class="py-20 px-4">
         <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="relative">
-                    <img src="/placeholder.svg?height=600&width=800" alt="Restaurant" class="w-full rounded-lg">
-                    <div class="absolute bottom-4 left-4 bg-black bg-opacity-75 p-4 rounded-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2  items-center">
+                <div class="relative left-20">
+                    <img src="../images/Restaurantd.png" alt="Restaurant" class="w-2/3 rounded-lg">
+                    <div class="absolute bottom-0 left-80 bg-amber-400  p-8 rounded-lg">
                         <p class="text-sm">Great hospitality at the ket to pride</p>
                         <p class="text-xs text-gray-400">of Britain's Longstanding reputation for excellence</p>
                     </div>
                 </div>
                 <div>
-                    <h2 class="text-3xl mb-6">Enjoy Food and Even <span class="text-amber-400">Better</span> Hospitality</h2>
-                    <p class="text-gray-400 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, neque elementum ultricies pellentesque.</p>
-                    
-                    <div class="grid grid-cols-2 gap-8">
+                    <h2 class="text-3xl mb-6 ">Enjoy Food and Even <span class="text-amber-400">Better</span> Hospitality
+                    </h2>
+                    <p class="text-gray-400 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                        rutrum, neque elementum ultricies pellentesque.</p>
+
+                    <div class="grid grid-cols-2">
                         <div>
                             <h4 class="text-amber-400 mb-4">Restaurant</h4>
                             <ul class="space-y-2">
-                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Healthy Food</li>
-                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Award - Winning Restaurant</li>
+                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Healthy
+                                    Food</li>
+                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Award -
+                                    Winning Restaurant</li>
                             </ul>
                         </div>
                         <div>
                             <h4 class="text-amber-400 mb-4">Wellness</h4>
                             <ul class="space-y-2">
-                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Individually Styled Bedrooms</li>
-                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Swimming Pool</li>
+                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i>
+                                    Individually Styled Bedrooms</li>
+                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Swimming
+                                    Pool</li>
                             </ul>
                         </div>
                     </div>
@@ -185,49 +244,80 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <img src="/placeholder.svg?height=40&width=150" alt="Blue Mountain Logo" class="h-10 mb-4">
-                    <p class="text-gray-400 text-sm">We, Blue Mountain Resort and Hospitality welcome you to enjoy your holiday</p>
-                    <div class="flex space-x-4 mt-4">
-                        <a href="#" class="text-gray-400 hover:text-amber-400"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-amber-400"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-amber-400"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="text-amber-400 mb-4">Quick Link</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-amber-400">Home</a></li>
-                        <li><a href="#" class="hover:text-amber-400">About Us</a></li>
-                        <li><a href="#" class="hover:text-amber-400">Destinations</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-amber-400 mb-4">Services</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-amber-400">Food & Restaurant</a></li>
-                        <li><a href="#" class="hover:text-amber-400">Luxury Rooms</a></li>
-                        <li><a href="#" class="hover:text-amber-400">Swimming Pool</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-amber-400 mb-4">Information</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> 2nd Floor, Blue House, Near PQR Bank</li>
-                        <li class="flex items-center"><i class="fas fa-phone mr-2"></i> Monday - Saturday: 10:00 AM - 7:00 PM</li>
-                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> reservations@bluemountainresort.in</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; Copyright 2023 Blue Mountain | All Rights Reserved</p>
-            </div>
+    <!--Footer-->
+<footer class="py-8">
+    <div class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Logo and About -->
+      <div>
+        <img src="../images/logo.png" alt="Blue Mountain Logo" class="mb-4">
+        <h2 class="text-lg font-semibold text-gold">Blue Mountain</h2>
+        <p class="text-gray-400 mt-2">
+          We, Blue Mountain Resort and Hospitality (BMRH) offer premium family holiday memberships.
+        </p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="text-gold fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="text-gold fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="text-gold fab fa-twitter fa-lg"></i></a>
         </div>
-    </footer>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold text-gold mb-4">Quick Links</h3>
+        <ul class="text-gray-400 space-y-2">
+          <li><a href="#" class="hover:text-yellow-500">Home</a></li>
+          <li><a href="#" class="hover:text-yellow-500">About Us</a></li>
+          <li><a href="#" class="hover:text-yellow-500">Destinations</a></li>
+          <li><a href="#" class="hover:text-yellow-500">Video</a></li>
+          <li><a href="#" class="hover:text-yellow-500">Gallery</a></li>
+          <li><a href="#" class="hover:text-yellow-500">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-lg font-semibold text-gold mb-4">Services</h3>
+        <ul class="text-gray-400 space-y-2">
+          <li><a href="#" class="hover:text-yellow-500">Food & Restaurant</a></li>
+          <li><a href="#" class="hover:text-yellow-500">Luxury Rooms</a></li>
+          <li><a href="#" class="hover:text-yellow-500">Swimming Pool</a></li>
+          <li><a href="#" class="hover:text-yellow-500">Living Rooms</a></li>
+          <li><a href="#" class="hover:text-yellow-500">Breakfast</a></li>
+        </ul>
+      </div>
+
+      <!-- Information -->
+      <div>
+        <h3 class="text-lg font-semibold text-gold mb-4">Information</h3>
+        <ul class="text-gray-400 space-y-2">
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-map-marker-alt text-gold"></i>
+            <span>2nd Floor, Rishi House, Near ICICI Bank, Kargil Chowk Piplod Surat, 395007</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-phone text-gold"></i>
+            <a href="tel:+02613507520" class="hover:text-yellow-500">0261 3507520</a>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-envelope text-gold"></i>
+            <a href="mailto:reservation@bluemountainresort.in" class="hover:text-yellow-500">reservation@bluemountainresort.in</a>
+          </li>
+          <li class="flex items-center space-x-2">
+            <i class="fas fa-clock text-gold"></i>
+            <span>Monday - Saturday : 10:00 AM - 7:00 PM</span>
+          </li>
+        </ul>
+        <div class="mt-4">
+          <a href="#" class="inline-block text-white border py-2 px-4 rounded hover:bg-yellow-600">
+            <i class="fab fa-google-play"></i> Google Play
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400 text-sm">
+      &copy; Copyright 2015 | Blue Mountain | All Rights Reserved
+    </div>
+  </footer>
 
     <script>
         // Mobile menu toggle
@@ -246,4 +336,5 @@
         });
     </script>
 </body>
+
 </html>

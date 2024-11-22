@@ -82,7 +82,7 @@
                             </path>
                         </svg>
                     </div>
-                    <button class="px-6 py-2 amber ">Check Now</button>
+                    <button class="px-6 py-2 bg-gold ">Check Now</button>
                 </div>
             </div>
 
@@ -124,7 +124,7 @@
                         </div>
                     </div>
                     <button
-                        class="amber text-white px-6 py-2 font-semibold hover:bg-yellow-600 transition duration-300">Read
+                        class="bg-gold text-white px-6 py-2 font-semibold hover:bg-yellow-600 transition duration-300">Read
                         More >></button>
                 </div>
             </div>
@@ -221,10 +221,10 @@
 
         <!-- Navigation Buttons -->
         <div class="flex justify-center items-center mt-8 space-x-4">
-            <button class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded-lg">
+            <button class="bg-gold hover:bg-amber-700 text-white font-bold py-2 px-4 rounded-lg">
                 ←
             </button>
-            <button class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded-lg">
+            <button class="bg-gold hover:bg-amber-700 text-white font-bold py-2 px-4 rounded-lg">
                 →
             </button>
         </div>
@@ -325,7 +325,7 @@
         <h2 class="text-3xl font-bold mb-4">Book Hotel Rooms Deals & Book Flights Online</h2>
         <p class="mb-8">Experience luxury and comfort at unbeatable prices</p>
         <button
-            class="bg-yellow-500 text-black px-8 py-3 rounded-full text-lg font-semibold hover:bg-yellow-600 transition duration-300">Book
+            class="bg-gold text-black px-8 py-3 text-lg font-semibold hover:bg-yellow-600 transition duration-300">Book
             Now</button>
     </div>
 </section>
@@ -413,20 +413,20 @@
       <!-- Logo and About -->
       <div>
         <img src="./images/logo.png" alt="Blue Mountain Logo" class="mb-4">
-        <h2 class="text-lg font-semibold text-yellow-500">Blue Mountain</h2>
+        <h2 class="text-lg font-semibold text-gold">Blue Mountain</h2>
         <p class="text-gray-400 mt-2">
           We, Blue Mountain Resort and Hospitality (BMRH) offer premium family holiday memberships.
         </p>
         <div class="flex space-x-4 mt-4">
-          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-facebook fa-lg"></i></a>
-          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-instagram fa-lg"></i></a>
-          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="text-gold fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="text-gold fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="text-gold fab fa-twitter fa-lg"></i></a>
         </div>
       </div>
 
       <!-- Quick Links -->
       <div>
-        <h3 class="text-lg font-semibold text-yellow-500 mb-4">Quick Links</h3>
+        <h3 class="text-lg font-semibold text-gold mb-4">Quick Links</h3>
         <ul class="text-gray-400 space-y-2">
           <li><a href="#" class="hover:text-yellow-500">Home</a></li>
           <li><a href="#" class="hover:text-yellow-500">About Us</a></li>
@@ -439,7 +439,7 @@
 
       <!-- Services -->
       <div>
-        <h3 class="text-lg font-semibold text-yellow-500 mb-4">Services</h3>
+        <h3 class="text-lg font-semibold text-gold mb-4">Services</h3>
         <ul class="text-gray-400 space-y-2">
           <li><a href="#" class="hover:text-yellow-500">Food & Restaurant</a></li>
           <li><a href="#" class="hover:text-yellow-500">Luxury Rooms</a></li>
@@ -451,27 +451,27 @@
 
       <!-- Information -->
       <div>
-        <h3 class="text-lg font-semibold text-yellow-500 mb-4">Information</h3>
+        <h3 class="text-lg font-semibold text-gold mb-4">Information</h3>
         <ul class="text-gray-400 space-y-2">
           <li class="flex items-center space-x-2">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="fas fa-map-marker-alt text-gold"></i>
             <span>2nd Floor, Rishi House, Near ICICI Bank, Kargil Chowk Piplod Surat, 395007</span>
           </li>
           <li class="flex items-center space-x-2">
-            <i class="fas fa-phone"></i>
+            <i class="fas fa-phone text-gold"></i>
             <a href="tel:+02613507520" class="hover:text-yellow-500">0261 3507520</a>
           </li>
           <li class="flex items-center space-x-2">
-            <i class="fas fa-envelope"></i>
+            <i class="fas fa-envelope text-gold"></i>
             <a href="mailto:reservation@bluemountainresort.in" class="hover:text-yellow-500">reservation@bluemountainresort.in</a>
           </li>
           <li class="flex items-center space-x-2">
-            <i class="fas fa-clock"></i>
+            <i class="fas fa-clock text-gold"></i>
             <span>Monday - Saturday : 10:00 AM - 7:00 PM</span>
           </li>
         </ul>
         <div class="mt-4">
-          <a href="#" class="inline-block bg-yellow-500 text-gray-900 py-2 px-4 rounded hover:bg-yellow-600">
+          <a href="#" class="inline-block text-white border py-2 px-4 rounded hover:bg-yellow-600">
             <i class="fab fa-google-play"></i> Google Play
           </a>
         </div>
@@ -482,7 +482,18 @@
     </div>
   </footer>
 
-
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      'gold': '#B08D57',
+                  }
+              }
+          }
+      }
+  </script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js"
