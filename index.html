@@ -21,19 +21,21 @@
 
 <body>
     <!-- Header -->
-    <header
-        class="fixed top-5 w-full bg-black bg-opacity-0 backdrop-blur-sm text-white flex items-center justify-between px-8 py-4 z-50">
-        <!-- Logo and Title -->
-        <div class="ml-24 flex items-center">
-            <img src="./images/logo.png" alt="Blue Mountain Logo" class="h-12">
+    <header class="fixed w-full z-50 bg-transparent">
+        <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <img src="./images/logo.png" alt="Blue Mountain Logo" class="h-10">
+            <button id="menuToggle" class="text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <div id="mobileMenu" class="hidden bg-gray-800 w-full absolute top-full left-0">
+            <ul class="py-4">
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Home</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Destinations</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">About Us</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Contact</a></li>
+            </ul>
         </div>
-
-        <!-- Navigation Menu -->
-        <button>
-            <div class="mr-24 text-2xl cursor-pointer">
-                ☰
-            </div>
-        </button>
     </header>
 
     <!-- Hero Section -->
@@ -486,6 +488,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js"
         integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            // Mobile menu toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+    
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+    
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', (event) => {
+                if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        </script>
 </body>
 
 </html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Mountain Resort</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-transparent">
+        <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <img src="/placeholder.svg?height=40&width=150" alt="Blue Mountain Logo" class="h-10">
+            <button id="menuToggle" class="text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <div id="mobileMenu" class="hidden bg-gray-800 w-full absolute top-full left-0">
+            <ul class="py-4">
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Home</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Destinations</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">About Us</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen">
+        <img src="/placeholder.svg?height=1080&width=1920" alt="Luxury Room" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <h1 class="text-5xl md:text-7xl font-serif">Destinations</h1>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-center mb-2 text-3xl"><span class="text-amber-400">Our insertional</span> Destinations</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non efficitur eros, id placerat ipsum.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Destination Cards -->
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Maldives" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-xl font-bold">Maldives</h3>
+                        <div class="flex text-amber-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar cards for other destinations -->
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Canada" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-xl font-bold">Canada</h3>
+                        <div class="flex text-amber-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="/placeholder.svg?height=400&width=600" alt="Dubai" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                    <div class="absolute bottom-4 left-4">
+                        <h3 class="text-xl font-bold">Dubai</h3>
+                        <div class="flex text-amber-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-black bg-opacity-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <h3 class="text-4xl font-bold text-amber-400">22,868</h3>
+                    <p class="text-sm text-gray-400">Happy Holiday makers</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold text-amber-400">192</h3>
+                    <p class="text-sm text-gray-400">Countries to Visit</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold text-amber-400">24,902</h3>
+                    <p class="text-sm text-gray-400">Miles of Earth to Explore</p>
+                </div>
+                <div>
+                    <h3 class="text-4xl font-bold text-amber-400">8,710</h3>
+                    <p class="text-sm text-gray-400">Beaches to Discover</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Where Next Section -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl mb-2">Where <span class="text-amber-400">Next</span> ?</h2>
+            <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Our team of experts offer mouth watering special offers. From adventurous elephant trekking to near-inspiring beaches, our collection of destinations is unmatched.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div class="relative overflow-hidden rounded-lg h-64 group">
+                    <img src="/placeholder.svg?height=300&width=400" alt="North Zone" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-xl font-bold">North Zone</h3>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg h-64 group">
+                    <img src="/placeholder.svg?height=300&width=400" alt="South Zone" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-xl font-bold">South Zone</h3>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg h-64 group">
+                    <img src="/placeholder.svg?height=300&width=400" alt="East Zone" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-xl font-bold">East Zone</h3>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg h-64 group">
+                    <img src="/placeholder.svg?height=300&width=400" alt="West Zone" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-xl font-bold">West Zone</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food and Hospitality Section -->
+    <section class="py-20 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="/placeholder.svg?height=600&width=800" alt="Restaurant" class="w-full rounded-lg">
+                    <div class="absolute bottom-4 left-4 bg-black bg-opacity-75 p-4 rounded-lg">
+                        <p class="text-sm">Great hospitality at the ket to pride</p>
+                        <p class="text-xs text-gray-400">of Britain's Longstanding reputation for excellence</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl mb-6">Enjoy Food and Even <span class="text-amber-400">Better</span> Hospitality</h2>
+                    <p class="text-gray-400 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, neque elementum ultricies pellentesque.</p>
+                    
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-amber-400 mb-4">Restaurant</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Healthy Food</li>
+                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Award - Winning Restaurant</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-amber-400 mb-4">Wellness</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Individually Styled Bedrooms</li>
+                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Swimming Pool</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="/placeholder.svg?height=40&width=150" alt="Blue Mountain Logo" class="h-10 mb-4">
+                    <p class="text-gray-400 text-sm">We, Blue Mountain Resort and Hospitality welcome you to enjoy your holiday</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-amber-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-amber-400 mb-4">Quick Link</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-amber-400">Home</a></li>
+                        <li><a href="#" class="hover:text-amber-400">About Us</a></li>
+                        <li><a href="#" class="hover:text-amber-400">Destinations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-amber-400 mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-amber-400">Food & Restaurant</a></li>
+                        <li><a href="#" class="hover:text-amber-400">Luxury Rooms</a></li>
+                        <li><a href="#" class="hover:text-amber-400">Swimming Pool</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-amber-400 mb-4">Information</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> 2nd Floor, Blue House, Near PQR Bank</li>
+                        <li class="flex items-center"><i class="fas fa-phone mr-2"></i> Monday - Saturday: 10:00 AM - 7:00 PM</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> reservations@bluemountainresort.in</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; Copyright 2023 Blue Mountain | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
