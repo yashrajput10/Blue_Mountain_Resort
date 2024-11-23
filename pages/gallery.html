@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Mountain Gallery</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -21,13 +21,14 @@
                 <li><a href="../index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a></li>
                 <li><a href="../pages/about.html" class="block px-4 py-2 hover:bg-gray-700">About Us</a></li>
                 <li><a href="../pages/destinations.html" class="block px-4 py-2 hover:bg-gray-700">Destinations</a></li>
-                <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">Contact</a></li>
+                <li><a href="../pages/gallery.html" class="block px-4 py-2 hover:bg-gray-700">Gallery</a></li>
+                <li><a href="../pages/contactus.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a></li>
             </ul>
         </div>
     </header>
     <!-- Hero Section -->
     <div class="relative h-[40vh] md:h-[60vh] w-full">
-        <img src="../images/gallerybanner.png" alt="Luxury hotel room" class="w-full h-full object-cover brightness-50">
+        <img src="../images/gallerybanner.png" alt="Luxury hotel room" class="w-full h-full object-cover brightness-25">
         <div class="absolute inset-0 flex items-center justify-center">
             <h1 class="text-4xl md:text-6xl font-serif">Gallery</h1>
         </div>
@@ -159,6 +160,10 @@
                 extend: {
                     colors: {
                         'gold': '#B08D57',
+                    },
+                    brightness: {
+                        25: '.25',
+                        175: '1.75',
                     }
                 }
             }
