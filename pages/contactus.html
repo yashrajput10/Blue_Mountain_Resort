@@ -31,25 +31,35 @@
     <header class="fixed w-full z-50 bg-transparent">
         <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
             <img src="../images/logo.png" alt="Blue Mountain Logo" class="h-10">
-            <button id="menuToggle" class="text-white focus:outline-none">
+            <button id="menu-toggle" class="text-white focus:outline-none">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
-        <div id="mobileMenu" class="hidden bg-gray-800 w-full absolute top-full left-0">
-            <ul class="py-4">
-                <li><a href="../index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a></li>
-                <li><a href="../pages/about.html" class="block px-4 py-2 hover:bg-gray-700">About Us</a></li>
-                <li><a href="../pages/destinations.html" class="block px-4 py-2 hover:bg-gray-700">Destinations</a></li>
-                <li><a href="../pages/video.html" class="block px-4 py-2 hover:bg-gray-700">Video</a></li>
-                <li><a href="../pages/gallery.html" class="block px-4 py-2 hover:bg-gray-700">Gallery</a></li>
-                <li><a href="../pages/contactus.html" class="block px-4 py-2 hover:bg-gray-700">Contact Us</a></li>
-            </ul>
-        </div>
+        <!-- Toggle Menu -->
+        <div id="menu"
+            class="hidden fixed inset-0 flex flex-col items-center justify-center z-50 space-y-6 transition-all duration-300"
+            style="background-image: url('../images/homebanner.png');">
+            <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+            <h1 class="text-6xl font-serif text-white mb-8 z-50">Menu</h1>
+            <nav class="z-50">
+                <ul class="space-y-4 text-xl text-white">
+                    <li><a href="../index.html" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="../pages/about.html" class="hover:text-gray-400">About Us</a></li>
+                    <li><a href="../pages/destinations.html" class="hover:text-gray-400">Destinations</a></li>
+                    <li><a href="../pages/video.html" class="hover:text-gray-400">Video</a></li>
+                    <li><a href="../pages/gallery.html" class="hover:text-gray-400">Gallery</a></li>
+                    <li><a href="./contactus.html" class="hover:text-gray-400">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button id="close-menu" class="absolute top-6 right-6 text-white text-2xl">
+                &#x2716;
+            </button>
     </header>
+
+
     <!-- Hero Section -->
     <div class="relative h-[40vh] md:h-[60vh] w-full">
-        <img src="../images/gallerybanner.png" alt="Luxury hotel room"
-            class="w-full h-full object-cover brightness-25">
+        <img src="../images/gallerybanner.png" alt="Luxury hotel room" class="w-full h-full object-cover brightness-25">
         <div class="absolute inset-0 flex items-center justify-center">
             <h1 class="text-4xl md:text-6xl font-serif">Contact Us</h1>
         </div>
@@ -60,48 +70,31 @@
                 <span class="text-bronze">Get In </span>
                 <span class="text-white">Touch</span>
             </h2>
-            
+
             <form class="space-y-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <input 
-                        type="text" 
-                        placeholder="Name" 
-                        class="w-full bg-transparent border border-gray-700 rounded-sm px-4 py-3 text-gray-300 focus:outline-none focus:border-bronze"
-                    >
-                    
-                    <input 
-                        type="email" 
-                        placeholder="Email" 
-                        class="w-full bg-transparent border border-gray-700 rounded-sm px-4 py-3 text-gray-300 focus:outline-none focus:border-bronze"
-                    >
+                    <input type="text" placeholder="Name"
+                        class="w-full bg-transparent border border-gray-700 rounded-sm px-4 py-3 text-gray-300 focus:outline-none focus:border-bronze">
+
+                    <input type="email" placeholder="Email"
+                        class="w-full bg-transparent border border-gray-700 rounded-sm px-4 py-3 text-gray-300 focus:outline-none focus:border-bronze">
                 </div>
-                
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <input 
-                        type="tel" 
-                        placeholder="Mobile Number" 
-                        class="w-full bg-transparent border border-gray-700 rounded-sm px-4 py-3 text-gray-300 focus:outline-none focus:border-bronze"
-                    >
-                    
-                    <input 
-                        type="text" 
-                        placeholder="Address" 
-                        class="w-full bg-transparent border border-gray-700 rounded-sm px-4 py-3 text-gray-300 focus:outline-none focus:border-bronze"
-                    >
+                    <input type="tel" placeholder="Mobile Number"
+                        class="w-full bg-transparent border border-gray-700 rounded-sm px-4 py-3 text-gray-300 focus:outline-none focus:border-bronze">
+
+                    <input type="text" placeholder="Address"
+                        class="w-full bg-transparent border border-gray-700 rounded-sm px-4 py-3 text-gray-300 focus:outline-none focus:border-bronze">
                 </div>
-                
-                <textarea 
-                    placeholder="Message" 
-                    rows="6" 
-                    class="w-full bg-transparent border border-gray-700 rounded-sm px-4 py-3 text-gray-300 focus:outline-none focus:border-bronze"
-                ></textarea>
-                
+
+                <textarea placeholder="Message" rows="6"
+                    class="w-full bg-transparent border border-gray-700 rounded-sm px-4 py-3 text-gray-300 focus:outline-none focus:border-bronze"></textarea>
+
                 <div class="flex justify-center">
-                    <button 
-                        type="submit" 
-                        class="bg-bronze text-white px-28 py-2 rounded-sm hover:bg-opacity-90 transition-all duration-300 flex items-center space-x-2"
-                    >
-                        Submit  >>
+                    <button type="submit"
+                        class="bg-bronze text-white px-28 py-2 rounded-sm hover:bg-opacity-90 transition-all duration-300 flex items-center space-x-2">
+                        Submit >>
                     </button>
                 </div>
             </form>
@@ -188,22 +181,23 @@
         </div>
     </footer>
 
-   
+
     <script>
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menuToggle');
-            const mobileMenu = document.getElementById('mobileMenu');
+        // Toggle Menu Script
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        const closeMenu = document.getElementById('close-menu');
+        // Open Menu
+        menuToggle.addEventListener('click', () => {
+            menu.classList.remove('hidden');
+            menu.classList.add('flex');
+        });
 
-            menuToggle.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            // Close mobile menu when clicking outside
-            document.addEventListener('click', (event) => {
-                if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
-                    mobileMenu.classList.add('hidden');
-                }
-            });
+        // Close Menu
+        closeMenu.addEventListener('click', () => {
+            menu.classList.remove('flex');
+            menu.classList.add('hidden');
+        });
     </script>
 </body>
 

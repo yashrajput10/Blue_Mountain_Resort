@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blue_Mountain_Resort</title>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet">
-        <!--costome font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-            integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Custome Css -->
-        <link href="../css/style.css" rel="stylesheet" type="text/css" />
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue_Mountain_Resort</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--costome font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custome Css -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
 <body class="text-white">
+    <!-- Header -->
     <header class="fixed w-full z-50 bg-transparent">
         <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
             <img src="../images/logo.png" alt="Blue Mountain Logo" class="h-10">
-            <button id="menuToggle" class="text-white focus:outline-none">
+            <button id="menu-toggle" class="text-white focus:outline-none">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
-        <div id="mobileMenu" class="hidden bg-gray-800 w-full absolute top-full left-0">
-            <ul class="py-4">
-                <li><a href="../index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a></li>
-                <li><a href="../pages/about.html" class="block px-4 py-2 hover:bg-gray-700">About Us</a></li>
-                <li><a href="../pages/destinations.html" class="block px-4 py-2 hover:bg-gray-700">Destinations</a></li>
-                <li><a href="../pages/video.html" class="block px-4 py-2 hover:bg-gray-700">Video</a></li>
-                <li><a href="../pages/gallery.html" class="block px-4 py-2 hover:bg-gray-700">Gallery</a></li>
-                <li><a href="../pages/contactus.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a></li>
-            </ul>
-        </div>
+        <!-- Toggle Menu -->
+        <div id="menu"
+            class="hidden fixed inset-0 flex flex-col items-center justify-center z-50 space-y-6 transition-all duration-300"
+            style="background-image: url('../images/homebanner.png');">
+            <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+            <h1 class="text-6xl font-serif text-white mb-8 z-50">Menu</h1>
+            <nav class="z-50">
+                <ul class="space-y-4 text-xl text-white">
+                    <li><a href="../index.html" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="../pages/about.html" class="hover:text-gray-400">About Us</a></li>
+                    <li><a href="../pages/destinations.html" class="hover:text-gray-400">Destinations</a></li>
+                    <li><a href="../pages/video.html" class="hover:text-gray-400">Video</a></li>
+                    <li><a href="../pages/gallery.html" class="hover:text-gray-400">Gallery</a></li>
+                    <li><a href="./contactus.html" class="hover:text-gray-400">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button id="close-menu" class="absolute top-6 right-6 text-white text-2xl">
+                &#x2716;
+            </button>
     </header>
 
     <main>
@@ -54,8 +66,11 @@
                     </div>
                     <div class="md:w-1/2 md:pl-12">
                         <img src="../images/about2.png" alt="Hotel Interior" class="w-full rounded-lg shadow-lg">
-                        <h2 class="text-3xl md:text-4xl font-bold mb-6">Enjoy Food and Even Better <span class="text-yellow-500">Hospitality</span></h2>
-                        <p class="text-gray-300 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare velit eget euismod ullamcorper aliquet. Ipsum tellus aliquot nisi, id posuere sem tellus et justo. Integer augue ipsum, pharetra at ultrices ut, vehicula a lacus.</p>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">Enjoy Food and Even Better <span
+                                class="text-yellow-500">Hospitality</span></h2>
+                        <p class="text-gray-300 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                            ornare velit eget euismod ullamcorper aliquet. Ipsum tellus aliquot nisi, id posuere sem
+                            tellus et justo. Integer augue ipsum, pharetra at ultrices ut, vehicula a lacus.</p>
                     </div>
                 </div>
             </div>
@@ -68,8 +83,16 @@
                         <img src="../images/about3.png" alt="Outdoor Activities" class="w-50 h-50 rounded-lg shadow-lg">
                     </div>
                     <div class="md:w-1/2 p-4 mb-8 md:mb-0 md:pr-12">
-                        <h2 class="text-3xl md:text-4xl font-bold mb-6">We Provide Outdoor Activities <span class="text-yellow-500">To All Visitors</span></h2>
-                        <p class="text-gray-300 mb-6">The new age travelers seek immersive and experiential holidays that aren't limited to hotel rooms and room service. Recognizing this trend, Blue Mountain Resort offers travelers today access to amazing experiences that reflect both adventure and sightseeing along with peace and tranquility. We, Blue Mountain Resort (BMR) offer premium family holiday memberships. We provide holiday at 100+ Resorts & Hotels in Domestic & International destinations. We are the country's leading experiential holiday company that offers an immersive experience to explore diverse destinations and make lifelong memories.</p>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">We Provide Outdoor Activities <span
+                                class="text-yellow-500">To All Visitors</span></h2>
+                        <p class="text-gray-300 mb-6">The new age travelers seek immersive and experiential holidays
+                            that aren't limited to hotel rooms and room service. Recognizing this trend, Blue Mountain
+                            Resort offers travelers today access to amazing experiences that reflect both adventure and
+                            sightseeing along with peace and tranquility. We, Blue Mountain Resort (BMR) offer premium
+                            family holiday memberships. We provide holiday at 100+ Resorts & Hotels in Domestic &
+                            International destinations. We are the country's leading experiential holiday company that
+                            offers an immersive experience to explore diverse destinations and make lifelong memories.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -77,43 +100,56 @@
 
         <section class="py-16 md:py-24">
             <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Why Choose Blue <span class="text-yellow-500">Mountain?</span></h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Why Choose Blue <span
+                        class="text-yellow-500">Mountain?</span></h2>
                 <div class="flex flex-col md:flex-row">
                     <div class="md:w-1/2 mb-8 md:mb-0 p-24">
                         <ul class="space-y-4">
                             <li class="flex items-center">
-                                <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
                                 </svg>
                                 Great Hospitality
                             </li>
                             <li class="flex items-center">
-                                <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
                                 </svg>
                                 100% Client satisfaction
                             </li>
                             <li class="flex items-center">
-                                <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
                                 </svg>
                                 Pocket Friendly
                             </li>
                             <li class="flex items-center">
-                                <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
                                 </svg>
                                 Jaw-Dropping Deals
                             </li>
                             <li class="flex items-center">
-                                <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
                                 </svg>
                                 Great Networks And Associations
                             </li>
                             <li class="flex items-center">
-                                <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                <svg class="w-6 h-6 mr-2 text-yellow-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 13l4 4L19 7"></path>
                                 </svg>
                                 Domestic & International Locations
                             </li>
@@ -131,11 +167,19 @@
                 <div class="flex flex-col md:flex-row">
                     <div class="md:w-1/2 mb-8 md:mb-0">
                         <h3 class="text-2xl md:text-3xl font-bold mb-6">Our Mission</h3>
-                        <p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin Molestie ipsum In Commodo Fringilla. Integer Ac Tristique Tellus. Nam At Velit Sed Quam Sodales Tincidunt In Sed Mi. Integer Aliquam Est Non Dolor. Vestibulum Vulputate, Diam Ut Posuere Justo, Nunc Ultricies per Enim At Eros Tristique Varius. Integer Ultricies Posuere Justo.</p>
+                        <p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin Molestie
+                            ipsum In Commodo Fringilla. Integer Ac Tristique Tellus. Nam At Velit Sed Quam Sodales
+                            Tincidunt In Sed Mi. Integer Aliquam Est Non Dolor. Vestibulum Vulputate, Diam Ut Posuere
+                            Justo, Nunc Ultricies per Enim At Eros Tristique Varius. Integer Ultricies Posuere Justo.
+                        </p>
                     </div>
                     <div class="md:w-1/2">
                         <h3 class="text-2xl md:text-3xl font-bold mb-6">Our Vision</h3>
-                        <p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin Molestie ipsum In Commodo Fringilla. Integer Ac Tristique Tellus. Nam At Velit Sed Quam Sodales Tincidunt In Sed Mi. Integer Aliquam Est Non Dolor. Vestibulum Vulputate, Diam Ut Posuere Justo, Nunc Ultricies per Enim At Eros Tristique Varius. Integer Ultricies Posuere Justo.</p>
+                        <p class="text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin Molestie
+                            ipsum In Commodo Fringilla. Integer Ac Tristique Tellus. Nam At Velit Sed Quam Sodales
+                            Tincidunt In Sed Mi. Integer Aliquam Est Non Dolor. Vestibulum Vulputate, Diam Ut Posuere
+                            Justo, Nunc Ultricies per Enim At Eros Tristique Varius. Integer Ultricies Posuere Justo.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -143,95 +187,101 @@
     </main>
 
     <!--Footer-->
-<footer class="py-8">
-    <div class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <!-- Logo and About -->
-      <div>
-        <img src="./images/logo.png" alt="Blue Mountain Logo" class="mb-4">
-        <h2 class="text-lg font-semibold text-gold">Blue Mountain</h2>
-        <p class="text-gray-400 mt-2">
-          We, Blue Mountain Resort and Hospitality (BMRH) offer premium family holiday memberships.
-        </p>
-        <div class="flex space-x-4 mt-4">
-          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="text-gold fab fa-facebook fa-lg"></i></a>
-          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="text-gold fab fa-instagram fa-lg"></i></a>
-          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="text-gold fab fa-twitter fa-lg"></i></a>
+    <footer class="py-8">
+        <div class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Logo and About -->
+            <div>
+                <img src="./images/logo.png" alt="Blue Mountain Logo" class="mb-4">
+                <h2 class="text-lg font-semibold text-gold">Blue Mountain</h2>
+                <p class="text-gray-400 mt-2">
+                    We, Blue Mountain Resort and Hospitality (BMRH) offer premium family holiday memberships.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-yellow-500"><i
+                            class="text-gold fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500"><i
+                            class="text-gold fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500"><i
+                            class="text-gold fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold text-gold mb-4">Quick Links</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="#" class="hover:text-yellow-500">Home</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">About Us</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Destinations</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Video</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Gallery</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h3 class="text-lg font-semibold text-gold mb-4">Services</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="#" class="hover:text-yellow-500">Food & Restaurant</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Luxury Rooms</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Swimming Pool</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Living Rooms</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Breakfast</a></li>
+                </ul>
+            </div>
+
+            <!-- Information -->
+            <div>
+                <h3 class="text-lg font-semibold text-gold mb-4">Information</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-map-marker-alt text-gold"></i>
+                        <span>2nd Floor, Rishi House, Near ICICI Bank, Kargil Chowk Piplod Surat, 395007</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-gold"></i>
+                        <a href="tel:+02613507520" class="hover:text-yellow-500">0261 3507520</a>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-gold"></i>
+                        <a href="mailto:reservation@bluemountainresort.in"
+                            class="hover:text-yellow-500">reservation@bluemountainresort.in</a>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-clock text-gold"></i>
+                        <span>Monday - Saturday : 10:00 AM - 7:00 PM</span>
+                    </li>
+                </ul>
+                <div class="mt-4">
+                    <a href="#" class="inline-block text-white border py-2 px-4 rounded hover:bg-yellow-600">
+                        <i class="fab fa-google-play"></i> Google Play
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div>
-        <h3 class="text-lg font-semibold text-gold mb-4">Quick Links</h3>
-        <ul class="text-gray-400 space-y-2">
-          <li><a href="#" class="hover:text-yellow-500">Home</a></li>
-          <li><a href="#" class="hover:text-yellow-500">About Us</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Destinations</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Video</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Gallery</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Services -->
-      <div>
-        <h3 class="text-lg font-semibold text-gold mb-4">Services</h3>
-        <ul class="text-gray-400 space-y-2">
-          <li><a href="#" class="hover:text-yellow-500">Food & Restaurant</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Luxury Rooms</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Swimming Pool</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Living Rooms</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Breakfast</a></li>
-        </ul>
-      </div>
-
-      <!-- Information -->
-      <div>
-        <h3 class="text-lg font-semibold text-gold mb-4">Information</h3>
-        <ul class="text-gray-400 space-y-2">
-          <li class="flex items-center space-x-2">
-            <i class="fas fa-map-marker-alt text-gold"></i>
-            <span>2nd Floor, Rishi House, Near ICICI Bank, Kargil Chowk Piplod Surat, 395007</span>
-          </li>
-          <li class="flex items-center space-x-2">
-            <i class="fas fa-phone text-gold"></i>
-            <a href="tel:+02613507520" class="hover:text-yellow-500">0261 3507520</a>
-          </li>
-          <li class="flex items-center space-x-2">
-            <i class="fas fa-envelope text-gold"></i>
-            <a href="mailto:reservation@bluemountainresort.in" class="hover:text-yellow-500">reservation@bluemountainresort.in</a>
-          </li>
-          <li class="flex items-center space-x-2">
-            <i class="fas fa-clock text-gold"></i>
-            <span>Monday - Saturday : 10:00 AM - 7:00 PM</span>
-          </li>
-        </ul>
-        <div class="mt-4">
-          <a href="#" class="inline-block text-white border py-2 px-4 rounded hover:bg-yellow-600">
-            <i class="fab fa-google-play"></i> Google Play
-          </a>
+        <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400 text-sm">
+            &copy; Copyright 2015 | Blue Mountain | All Rights Reserved
         </div>
-      </div>
-    </div>
-    <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400 text-sm">
-      &copy; Copyright 2015 | Blue Mountain | All Rights Reserved
-    </div>
-  </footer>
+    </footer>
 
-      <script>
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-
+    <script>
+        // Toggle Menu Script
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        const closeMenu = document.getElementById('close-menu');
+        // Open Menu
         menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            menu.classList.remove('hidden');
+            menu.classList.add('flex');
         });
 
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (event) => {
-            if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
-                mobileMenu.classList.add('hidden');
-            }
+        // Close Menu
+        closeMenu.addEventListener('click', () => {
+            menu.classList.remove('flex');
+            menu.classList.add('hidden');
         });
     </script>
 </body>
+
 </html>

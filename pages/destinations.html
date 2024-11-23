@@ -3,373 +3,395 @@
 
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blue_Mountain_Resort</title>
-        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet">
-        <!--costome font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-            integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Custome Css -->
-        <link href="../css/style.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            'gold': '#B08D57',
-                        },
-                        brightness: {
-                            25: '.25',
-                            175: '1.75',
-                        }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue_Mountain_Resort</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--costome font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custome Css -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold': '#B08D57',
+                    },
+                    brightness: {
+                        25: '.25',
+                        175: '1.75',
                     }
                 }
             }
-        </script>
+        }
+    </script>
 </head>
 
 <body class="text-white">
-       <!-- Header -->
-       <header class="fixed w-full z-50 bg-transparent">
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-transparent">
         <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
             <img src="../images/logo.png" alt="Blue Mountain Logo" class="h-10">
-            <button id="menuToggle" class="text-white focus:outline-none">
+            <button id="menu-toggle" class="text-white focus:outline-none">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
-        <div id="mobileMenu" class="hidden bg-gray-800 w-full absolute top-full left-0">
-            <ul class="py-4">
-                <li><a href="../index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a></li>
-                <li><a href="../pages/about.html" class="block px-4 py-2 hover:bg-gray-700">About Us</a></li>
-                <li><a href="../pages/destinations.html" class="block px-4 py-2 hover:bg-gray-700">Destinations</a></li>
-                <li><a href="../pages/video.html" class="block px-4 py-2 hover:bg-gray-700">Video</a></li>
-                <li><a href="../pages/gallery.html" class="block px-4 py-2 hover:bg-gray-700">Gallery</a></li>
-                <li><a href="../pages/contactus.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a></li>
-            </ul>
-        </div>
+        <!-- Toggle Menu -->
+        <div id="menu"
+            class="hidden fixed inset-0 flex flex-col items-center justify-center z-50 space-y-6 transition-all duration-300"
+            style="background-image: url('../images/homebanner.png');">
+            <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+            <h1 class="text-6xl font-serif text-white mb-8 z-50">Menu</h1>
+            <nav class="z-50">
+                <ul class="space-y-4 text-xl text-white">
+                    <li><a href="../index.html" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="../pages/about.html" class="hover:text-gray-400">About Us</a></li>
+                    <li><a href="../pages/destinations.html" class="hover:text-gray-400">Destinations</a></li>
+                    <li><a href="../pages/video.html" class="hover:text-gray-400">Video</a></li>
+                    <li><a href="../pages/gallery.html" class="hover:text-gray-400">Gallery</a></li>
+                    <li><a href="./contactus.html" class="hover:text-gray-400">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button id="close-menu" class="absolute top-6 right-6 text-white text-2xl">
+                &#x2716;
+            </button>
     </header>
 
-    
-     <main>
+
+    <main>
         <!-- Hero Section -->
         <div class="relative h-[40vh] md:h-[60vh] w-full">
-            <img src="../images/gallerybanner.png" alt="Luxury hotel room" class="w-full h-full object-cover brightness-25">
+            <img src="../images/gallerybanner.png" alt="Luxury hotel room"
+                class="w-full h-full object-cover brightness-25">
             <div class="absolute inset-0 flex items-center justify-center">
                 <h1 class="text-4xl md:text-6xl font-serif">Destinations</h1>
             </div>
         </div>
 
-    <!-- Destinations Grid -->
-    <section class="py-20 px-4">
-        <div class="container mx-auto">
-            <h2 class="text-center mb-2 text-3xl"><span class="text-amber-400">Our insertional</span> Destinations</h2>
-            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Nulla non efficitur eros, id placerat ipsum.</p>
+        <!-- Destinations Grid -->
+        <section class="py-20 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-center mb-2 text-3xl"><span class="text-amber-400">Our insertional</span> Destinations
+                </h2>
+                <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nulla non efficitur eros, id placerat ipsum.</p>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <!-- Destination Cards -->
-                <div class="group relative overflow-hidden rounded-lg">
-                    <img src="../images/maldiv.png" alt="maldiv"
-                        class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-                    <div class="absolute bottom-4 left-4">
-                        <h3 class="text-xl font-bold">Canada</h3>
-                        <div class="flex text-amber-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <!-- Destination Cards -->
+                    <div class="group relative overflow-hidden rounded-lg">
+                        <img src="../images/maldiv.png" alt="maldiv"
+                            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <h3 class="text-xl font-bold">Canada</h3>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat similar cards for other destinations -->
+                    <div class="group relative overflow-hidden rounded-lg">
+                        <img src="../images/canada.png" alt="Canada"
+                            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <h3 class="text-xl font-bold">Canada</h3>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-lg">
+                        <img src="../images/canada.png" alt="Dubai"
+                            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <h3 class="text-xl font-bold">Dubai</h3>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Repeat similar cards for other destinations -->
-                <div class="group relative overflow-hidden rounded-lg">
-                    <img src="../images/canada.png" alt="Canada"
-                        class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-                    <div class="absolute bottom-4 left-4">
-                        <h3 class="text-xl font-bold">Canada</h3>
-                        <div class="flex text-amber-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Destination Cards -->
+                    <div class="group relative overflow-hidden rounded-lg">
+                        <img src="../images/bankok.png" alt="Bangkok"
+                            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <h3 class="text-xl font-bold">Bangkok</h3>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-lg">
-                    <img src="../images/canada.png" alt="Dubai"
-                        class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-                    <div class="absolute bottom-4 left-4">
-                        <h3 class="text-xl font-bold">Dubai</h3>
-                        <div class="flex text-amber-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                    <!-- Repeat similar cards for other destinations -->
+                    <div class="group relative overflow-hidden rounded-lg">
+                        <img src="../images/kohsumi.png" alt="kohSumi"
+                            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <h3 class="text-xl font-bold">koh Sumi</h3>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Destination Cards -->
-                <div class="group relative overflow-hidden rounded-lg">
-                    <img src="../images/bankok.png" alt="Bangkok"
-                        class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-                    <div class="absolute bottom-4 left-4">
-                        <h3 class="text-xl font-bold">Bangkok</h3>
-                        <div class="flex text-amber-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat similar cards for other destinations -->
-                <div class="group relative overflow-hidden rounded-lg">
-                    <img src="../images/kohsumi.png" alt="kohSumi"
-                        class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-                    <div class="absolute bottom-4 left-4">
-                        <h3 class="text-xl font-bold">koh Sumi</h3>
-                        <div class="flex text-amber-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-lg">
-                    <img src="../images/khosumi2.png" alt="kohSumi"
-                        class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
-                    <div class="absolute bottom-4 left-4">
-                        <h3 class="text-xl font-bold">koh Sumi</h3>
-                        <div class="flex text-amber-400">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-
-    <section class="py-20 relative" style="background-image: url('../images/swimin.png');">
-        <div class="absolute inset-0 bg-black bg-opacity-80"></div>
-        <div class="absolute inset-0 container mx-auto p-10 text-center">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <h3 class="text-4xl font-bold text-amber-400">22,868</h3>
-                    <p class="text-sm text-white-400">Happy Holiday makers</p>
-                </div>
-                <div>
-                    <h3 class="text-4xl font-bold text-amber-400">192</h3>
-                    <p class="text-sm text-gray-400">Countries to Visit</p>
-                </div>
-                <div>
-                    <h3 class="text-4xl font-bold text-amber-400">24,902</h3>
-                    <p class="text-sm text-gray-400">Miles of Earth to Explore</p>
-                </div>
-                <div>
-                    <h3 class="text-4xl font-bold text-amber-400">8,710</h3>
-                    <p class="text-sm text-gray-400">Beaches to Discover</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Where Next Section -->
-
-    <section class="py-20 px-4">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl mb-2">Where <span class="text-amber-400">Next</span> ?</h2>
-            <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Our team of experts offer mouth watering special offers.
-                From adventurous elephant trekking to near-inspiring beaches, our collection of destinations is
-                unmatched.</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <div class="relative overflow-hidden rounded-lg h-64 group">
-                    <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
-                        <h3 class="text-xl font-bold">North Zone</h3>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden rounded-lg h-64 group">
-
-                    <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
-                        <h3 class="text-xl font-bold">South Zone</h3>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden rounded-lg h-64 group">
-                    <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
-                        <h3 class="text-xl font-bold">East Zone</h3>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden rounded-lg h-64 group">
-                    <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
-                        <h3 class="text-xl font-bold">West Zone</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Food and Hospitality Section -->
-
-    <section class="py-20 px-4">
-        <div class="container mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2  items-center">
-                <div class="relative left-20">
-                    <img src="../images/Restaurantd.png" alt="Restaurant" class="w-2/3 rounded-lg">
-                    <div class="absolute bottom-0 left-80 bg-amber-400  p-8 rounded-lg">
-                        <p class="text-sm">Great hospitality at the ket to pride</p>
-                        <p class="text-xs text-gray-400">of Britain's Longstanding reputation for excellence</p>
-                    </div>
-                </div>
-                <div>
-                    <h2 class="text-3xl mb-6 ">Enjoy Food and Even <span class="text-amber-400">Better</span> Hospitality
-                    </h2>
-                    <p class="text-gray-400 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                        rutrum, neque elementum ultricies pellentesque.</p>
-
-                    <div class="grid grid-cols-2">
-                        <div>
-                            <h4 class="text-amber-400 mb-4">Restaurant</h4>
-                            <ul class="space-y-2">
-                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Healthy
-                                    Food</li>
-                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Award -
-                                    Winning Restaurant</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-amber-400 mb-4">Wellness</h4>
-                            <ul class="space-y-2">
-                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i>
-                                    Individually Styled Bedrooms</li>
-                                <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Swimming
-                                    Pool</li>
-                            </ul>
+                    <div class="group relative overflow-hidden rounded-lg">
+                        <img src="../images/khosumi2.png" alt="kohSumi"
+                            class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <h3 class="text-xl font-bold">koh Sumi</h3>
+                            <div class="flex text-amber-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+
+        <!-- Stats Section -->
+
+        <section class="py-20 relative" style="background-image: url('../images/swimin.png');">
+            <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+            <div class="absolute inset-0 container mx-auto p-10 text-center">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <h3 class="text-4xl font-bold text-amber-400">22,868</h3>
+                        <p class="text-sm text-white-400">Happy Holiday makers</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-bold text-amber-400">192</h3>
+                        <p class="text-sm text-gray-400">Countries to Visit</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-bold text-amber-400">24,902</h3>
+                        <p class="text-sm text-gray-400">Miles of Earth to Explore</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-bold text-amber-400">8,710</h3>
+                        <p class="text-sm text-gray-400">Beaches to Discover</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Where Next Section -->
+
+        <section class="py-20 px-4">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl mb-2">Where <span class="text-amber-400">Next</span> ?</h2>
+                <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Our team of experts offer mouth watering special
+                    offers.
+                    From adventurous elephant trekking to near-inspiring beaches, our collection of destinations is
+                    unmatched.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="relative overflow-hidden rounded-lg h-64 group">
+                        <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
+                            <h3 class="text-xl font-bold">North Zone</h3>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg h-64 group">
+
+                        <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
+                            <h3 class="text-xl font-bold">South Zone</h3>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg h-64 group">
+                        <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
+                            <h3 class="text-xl font-bold">East Zone</h3>
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-lg h-64 group">
+                        <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
+                            <h3 class="text-xl font-bold">West Zone</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food and Hospitality Section -->
+
+        <section class="py-20 px-4">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2  items-center">
+                    <div class="relative left-20">
+                        <img src="../images/Restaurantd.png" alt="Restaurant" class="w-2/3 rounded-lg">
+                        <div class="absolute bottom-0 left-80 bg-amber-400  p-8 rounded-lg">
+                            <p class="text-sm">Great hospitality at the ket to pride</p>
+                            <p class="text-xs text-gray-400">of Britain's Longstanding reputation for excellence</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl mb-6 ">Enjoy Food and Even <span class="text-amber-400">Better</span>
+                            Hospitality
+                        </h2>
+                        <p class="text-gray-400 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                            rutrum, neque elementum ultricies pellentesque.</p>
+
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <h4 class="text-amber-400 mb-4">Restaurant</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i>
+                                        Healthy
+                                        Food</li>
+                                    <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i> Award
+                                        -
+                                        Winning Restaurant</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="text-amber-400 mb-4">Wellness</h4>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i>
+                                        Individually Styled Bedrooms</li>
+                                    <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i>
+                                        Swimming
+                                        Pool</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!--Footer-->
-<footer class="py-8">
-    <div class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <!-- Logo and About -->
-      <div>
-        <img src="../images/logo.png" alt="Blue Mountain Logo" class="mb-4">
-        <h2 class="text-lg font-semibold text-gold">Blue Mountain</h2>
-        <p class="text-gray-400 mt-2">
-          We, Blue Mountain Resort and Hospitality (BMRH) offer premium family holiday memberships.
-        </p>
-        <div class="flex space-x-4 mt-4">
-          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="text-gold fab fa-facebook fa-lg"></i></a>
-          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="text-gold fab fa-instagram fa-lg"></i></a>
-          <a href="#" class="text-gray-400 hover:text-yellow-500"><i class="text-gold fab fa-twitter fa-lg"></i></a>
+    <footer class="py-8">
+        <div class="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Logo and About -->
+            <div>
+                <img src="../images/logo.png" alt="Blue Mountain Logo" class="mb-4">
+                <h2 class="text-lg font-semibold text-gold">Blue Mountain</h2>
+                <p class="text-gray-400 mt-2">
+                    We, Blue Mountain Resort and Hospitality (BMRH) offer premium family holiday memberships.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-yellow-500"><i
+                            class="text-gold fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500"><i
+                            class="text-gold fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-yellow-500"><i
+                            class="text-gold fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold text-gold mb-4">Quick Links</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="#" class="hover:text-yellow-500">Home</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">About Us</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Destinations</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Video</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Gallery</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h3 class="text-lg font-semibold text-gold mb-4">Services</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="#" class="hover:text-yellow-500">Food & Restaurant</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Luxury Rooms</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Swimming Pool</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Living Rooms</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Breakfast</a></li>
+                </ul>
+            </div>
+
+            <!-- Information -->
+            <div>
+                <h3 class="text-lg font-semibold text-gold mb-4">Information</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-map-marker-alt text-gold"></i>
+                        <span>2nd Floor, Rishi House, Near ICICI Bank, Kargil Chowk Piplod Surat, 395007</span>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-gold"></i>
+                        <a href="tel:+02613507520" class="hover:text-yellow-500">0261 3507520</a>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-gold"></i>
+                        <a href="mailto:reservation@bluemountainresort.in"
+                            class="hover:text-yellow-500">reservation@bluemountainresort.in</a>
+                    </li>
+                    <li class="flex items-center space-x-2">
+                        <i class="fas fa-clock text-gold"></i>
+                        <span>Monday - Saturday : 10:00 AM - 7:00 PM</span>
+                    </li>
+                </ul>
+                <div class="mt-4">
+                    <a href="#" class="inline-block text-white border py-2 px-4 rounded hover:bg-yellow-600">
+                        <i class="fab fa-google-play"></i> Google Play
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div>
-        <h3 class="text-lg font-semibold text-gold mb-4">Quick Links</h3>
-        <ul class="text-gray-400 space-y-2">
-          <li><a href="#" class="hover:text-yellow-500">Home</a></li>
-          <li><a href="#" class="hover:text-yellow-500">About Us</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Destinations</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Video</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Gallery</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Services -->
-      <div>
-        <h3 class="text-lg font-semibold text-gold mb-4">Services</h3>
-        <ul class="text-gray-400 space-y-2">
-          <li><a href="#" class="hover:text-yellow-500">Food & Restaurant</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Luxury Rooms</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Swimming Pool</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Living Rooms</a></li>
-          <li><a href="#" class="hover:text-yellow-500">Breakfast</a></li>
-        </ul>
-      </div>
-
-      <!-- Information -->
-      <div>
-        <h3 class="text-lg font-semibold text-gold mb-4">Information</h3>
-        <ul class="text-gray-400 space-y-2">
-          <li class="flex items-center space-x-2">
-            <i class="fas fa-map-marker-alt text-gold"></i>
-            <span>2nd Floor, Rishi House, Near ICICI Bank, Kargil Chowk Piplod Surat, 395007</span>
-          </li>
-          <li class="flex items-center space-x-2">
-            <i class="fas fa-phone text-gold"></i>
-            <a href="tel:+02613507520" class="hover:text-yellow-500">0261 3507520</a>
-          </li>
-          <li class="flex items-center space-x-2">
-            <i class="fas fa-envelope text-gold"></i>
-            <a href="mailto:reservation@bluemountainresort.in" class="hover:text-yellow-500">reservation@bluemountainresort.in</a>
-          </li>
-          <li class="flex items-center space-x-2">
-            <i class="fas fa-clock text-gold"></i>
-            <span>Monday - Saturday : 10:00 AM - 7:00 PM</span>
-          </li>
-        </ul>
-        <div class="mt-4">
-          <a href="#" class="inline-block text-white border py-2 px-4 rounded hover:bg-yellow-600">
-            <i class="fab fa-google-play"></i> Google Play
-          </a>
+        <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400 text-sm">
+            &copy; Copyright 2015 | Blue Mountain | All Rights Reserved
         </div>
-      </div>
-    </div>
-    <div class="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400 text-sm">
-      &copy; Copyright 2015 | Blue Mountain | All Rights Reserved
-    </div>
-  </footer>
+    </footer>
 
-  
-  <script>
-      // Mobile menu toggle
-      const menuToggle = document.getElementById('menuToggle');
-      const mobileMenu = document.getElementById('mobileMenu');
 
-      menuToggle.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
-      });
+    <script>
+        // Toggle Menu Script
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        const closeMenu = document.getElementById('close-menu');
+        // Open Menu
+        menuToggle.addEventListener('click', () => {
+            menu.classList.remove('hidden');
+            menu.classList.add('flex');
+        });
 
-      // Close mobile menu when clicking outside
-      document.addEventListener('click', (event) => {
-          if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
-              mobileMenu.classList.add('hidden');
-          }
-      });
-  </script>
+        // Close Menu
+        closeMenu.addEventListener('click', () => {
+            menu.classList.remove('flex');
+            menu.classList.add('hidden');
+        });
+    </script>
+
 </body>
 
 </html>

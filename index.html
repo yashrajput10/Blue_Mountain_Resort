@@ -20,25 +20,34 @@
 </head>
 
 <body class="text-white">
-         <!-- Header -->
-         <header class="fixed w-full z-50 bg-transparent">
-            <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
-                <img src="./images/logo.png" alt="Blue Mountain Logo" class="h-10">
-                <button id="menuToggle" class="text-white focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
-                </button>
-            </nav>
-            <div id="mobileMenu" class="hidden bg-gray-800 w-full absolute top-full left-0">
-                <ul class="py-4">
-                    <li><a href="./index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a></li>
-                    <li><a href="./pages/about.html" class="block px-4 py-2 hover:bg-gray-700">About Us</a></li>
-                    <li><a href="./pages/destinations.html" class="block px-4 py-2 hover:bg-gray-700">Destinations</a></li>
-                    <li><a href="./pages/video.html" class="block px-4 py-2 hover:bg-gray-700">Video</a></li>
-                    <li><a href="./pages/gallery.html" class="block px-4 py-2 hover:bg-gray-700">Gallery</a></li>
-                    <li><a href="./pages/contactus.html" class="block px-4 py-2 hover:bg-gray-700">Contact</a></li>
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-transparent">
+        <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <img src="./images/logo.png" alt="Blue Mountain Logo" class="h-10">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Toggle Menu -->
+        <div id="menu"
+            class="hidden fixed inset-0 flex flex-col items-center justify-center z-50 space-y-6 transition-all duration-300"
+            style="background-image: url('./images/homebanner.png?height=1080&width=1920');">
+            <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+            <h1 class="text-6xl font-serif text-white mb-8 z-50">Menu</h1>
+            <nav class="z-50">
+                <ul class="space-y-4 text-xl text-white">
+                    <li><a href="./index.html" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="./pages/about.html" class="hover:text-gray-400">About Us</a></li>
+                    <li><a href="./pages/destinations.html" class="hover:text-gray-400">Destinations</a></li>
+                    <li><a href="./pages/video.html" class="hover:text-gray-400">Video</a></li>
+                    <li><a href="./pages/gallery.html" class="hover:text-gray-400">Gallery</a></li>
+                    <li><a href="./pages/contactus.html" class="hover:text-gray-400">Contact Us</a></li>
                 </ul>
-            </div>
-        </header>
+            </nav>
+            <button id="close-menu" class="absolute top-6 right-6 text-white text-2xl">
+                &#x2716;
+            </button>
+    </header>
 
     <!-- Hero Section -->
     <section class="relative h-screen bg-cover bg-center"
@@ -49,7 +58,7 @@
             <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Blue Mountain Resort And</h1>
             <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Hospitality</h1>
             <button
-                class="mt-6 bg-opacity-0 backdrop-blur-sm text-white border border-white items-center justify-between px-8 py-3 z-50 transition duration-300">Book
+                class="mt-6 bg-opacity-0 backdrop-blur-sm text-white border border-white items-center justify-between px-8 py-3 z-40 transition duration-300">Book
                 Now >></button>
             <div class="herolayout mt-24 text-white bg-opacity-50 p-3">
                 <div class="flex justify-center space-x-4 herolayoutb ">
@@ -507,19 +516,20 @@
         integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-
+        // Toggle Menu Script
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        const closeMenu = document.getElementById('close-menu');
+        // Open Menu
         menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            menu.classList.remove('hidden');
+            menu.classList.add('flex');
         });
 
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (event) => {
-            if (!menuToggle.contains(event.target) && !mobileMenu.contains(event.target)) {
-                mobileMenu.classList.add('hidden');
-            }
+        // Close Menu
+        closeMenu.addEventListener('click', () => {
+            menu.classList.remove('flex');
+            menu.classList.add('hidden');
         });
     </script>
 </body>
