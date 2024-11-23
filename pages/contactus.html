@@ -7,6 +7,23 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gold': '#B08D57',
+                        'bronze': '#B08B59',
+                    },
+                    brightness: {
+                        25: '.25',
+                        175: '1.75',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class="text-white">
@@ -170,23 +187,7 @@
         </div>
     </footer>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'gold': '#B08D57',
-                        'bronze': '#B08B59',
-                    },
-                    brightness: {
-                        25: '.25',
-                        175: '1.75',
-                    }
-                }
-            }
-        }
-    </script>
+   
     <script>
         // Mobile menu toggle
         const menuToggle = document.getElementById('menuToggle');
