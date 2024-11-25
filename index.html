@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <!-- Custome Css -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <style>
@@ -61,29 +65,51 @@
             <button id="close-menu" class="absolute top-6 right-6 text-white text-2xl">
                 &#x2716;
             </button>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section class="relative h-screen bg-cover bg-center"
         style="background-image: url('./images/homebanner.png?height=1080&width=1920');">
+        <!-- Dark overlay -->
         <div class="absolute inset-0 bg-black bg-opacity-80"></div>
-        <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
-            <p class="mb-4 text-white outfit">Holiday Like Never Before!</p>
-            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Blue Mountain Resort And</h1>
-            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">Hospitality</h1>
+
+        <!-- Centered Content -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+            <!-- Subtitle -->
+            <p class="mb-4 text-white text-sm sm:text-base lg:text-lg font-medium outfit">Holiday Like Never Before!</p>
+
+            <!-- Title -->
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white Playfair">
+                Blue Mountain Resort And
+            </h1>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white Playfair">
+                Hospitality
+            </h1>
+
+            <!-- Button -->
             <button
-                class="mt-6 bg-opacity-0 backdrop-blur-sm text-white border border-white items-center justify-between px-8 py-3 z-40 transition duration-300">Book
-                Now >></button>
-            <div class="herolayout mt-24 text-white bg-opacity-50 p-3">
-                <div class="flex justify-center space-x-4 herolayoutb ">
-                    <div class="flex items-center space-x-2  p-2">
-                        <span class="tracking-tight">Check in <i class="fa-solid fa-calendar-days"></i></span>
+                class="mt-6 bg-transparent backdrop-blur-md text-white border border-white items-center justify-center px-8 py-3 z-40 hover:bg-white hover:text-black transition duration-300">
+                Book Now &gt;&gt;
+            </button>
+
+            <!-- Hero Layout -->
+            <div class="mt-24 p-3 text-white w-full max-w-4xl bg-broan">
+                <div class="flex flex-wrap justify-center sm:justify-between items-center space-y-4 sm:space-y-0 outfit ">
+                    <!-- Check-in -->
+                    <div class="flex items-center space-x-2 p-2">
+                        <span class="tracking-tight">Check in</span>
+                        <i class="fa-solid fa-calendar-days"></i>
                     </div>
-                    <div class="flex items-center space-x-2 ">
+
+                    <!-- Check-out -->
+                    <div class="flex items-center space-x-2 p-2 ">
                         <span>Check out</span>
                         <i class="fa-solid fa-calendar-days"></i>
                     </div>
-                    <div class="flex items-center space-x-2">
+
+                    <!-- Adults -->
+                    <div class="flex items-center space-x-2 p-2">
                         <span>1 Adult</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +117,9 @@
                             </path>
                         </svg>
                     </div>
-                    <div class="flex items-center space-x-2">
+
+                    <!-- Children -->
+                    <div class="flex items-center space-x-2 p-2">
                         <span>Children</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +127,9 @@
                             </path>
                         </svg>
                     </div>
-                    <div class="flex items-center space-x-2">
+
+                    <!-- Rooms -->
+                    <div class="flex items-center space-x-2 p-2">
                         <span>1 Room</span>
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
@@ -107,92 +137,87 @@
                             </path>
                         </svg>
                     </div>
-                    <button class="px-6 py-2 bg-gold ">Check Now</button>
+
+                    <!-- Check Now Button -->
+                    <button class="px-6 py-2 bg-gold text-white hover:bg-opacity-90 transition duration-300">
+                        Check Now
+                    </button>
                 </div>
             </div>
-
         </div>
     </section>
+
 
     <!--blue mauntain-->
 
     <section class="py-16">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center">
+                <!-- Images Section -->
                 <div class="md:w-1/2 mb-8 md:mb-0">
                     <div class="grid grid-cols-2 gap-4">
-                        <img src="./images/Rectangle 1.png" alt="Room" class="rounded-lg ">
-                        <img src="./images/Rectangle 2.png" alt="Bathroom" class="rounded-lg mt-24">
+                        <img src="./images/Rectangle 1.png" alt="Room" class="rounded-lg w-full">
+                        <img src="./images/Rectangle 2.png" alt="Bathroom" class="rounded-lg mt-12 md:mt-24 w-full">
                     </div>
                 </div>
-                <div class="md:w-1/3 md:pl-12">
-                    <h5 class="text-white font-bold mb-4">Blue Mountain</h5>
-                    <h2 class="text-3xl font-bold mb-4 text-white">Who We Are</h2>
-                    <p class="mb-6 text-white">The new age travelers seek immersive and experiential holidays <br> that
-                        aren’t ordinary. Holidays today are much more than <br> accommodation and food. Most travelers
+                <!-- Content Section -->
+                <div class="md:w-1/3 md:pl-12 text-center md:text-left">
+                    <h5 class="text-white font-bold mb-4 text-lg Playfair">Blue Mountain</h5>
+                    <h2 class="text-3xl font-bold mb-4 text-gold Playfair">Who We <span class="text-white Playfair">Are</span></h2>
+                    <p class="mb-6 text-gray-400 text-sm  outfit">
+                        The new age travelers seek immersive and experiential holidays that aren’t ordinary. Holidays
                         today
-                        crave an <br> amazing experience that offers both adventure and sightseeing <br> along with
-                        peace and
-                        tranquility. We, Blue Mountain Resort and <br> Hospitality (BMRH) offer premium family holiday
-                        memberships. <br> We provide holidays at 100+ Resorts & Hotels in Domestic &.</p>
-                    <div class="flex items-center mb-4 bg-gray-700 ">
-                        <span class="text-white text-3xl mr-2 p-2 ml-2">4.9</span>
-                        <div class="ml-8">
-                            <p class="text-white mr-2">Rating based on 2000+ reviews</p>
-                            <div class="flex ">
-                                <i class="fa-solid fa-star" style="color: #ff9c07;"></i>
-                                <i class="fa-solid fa-star" style="color: #ff9c07;"></i>
-                                <i class="fa-solid fa-star" style="color: #ff9c07;"></i>
-                                <i class="fa-solid fa-star" style="color: #ff9c07;"></i>
-                                <i class="fa-solid fa-star" style="color: #ff9c07;"></i>
+                        are much more than accommodation and food. Most travelers crave an amazing experience that
+                        offers
+                        both adventure and sightseeing along with peace and tranquility. We, Blue Mountain Resort and
+                        Hospitality
+                        (BMRH) offer premium family holiday memberships. We provide holidays at 100+ Resorts & Hotels in
+                        Domestic &.
+                    </p>
+                    <!-- Rating Section -->
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start mb-6 bg-gray-800 p-4 rounded-lg">
+                        <span class="text-white text-3xl font-bold mr-4">4.9</span>
+                        <div>
+                            <p class="text-white text-sm mb-2 Playfair">Rating based on 2000+ reviews</p>
+                            <div class="flex space-x-1">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <i class="fa-solid fa-star text-yellow-500"></i>
                             </div>
                         </div>
                     </div>
+                    <!-- Button -->
                     <button
-                        class="bg-gold text-white px-6 py-2 font-semibold hover:bg-yellow-600 transition duration-300">Read
-                        More >></button>
+                        class="bg-gold text-white px-6 py-2 font-semibold hover:bg-yellow-600 transition duration-300">
+                        Read More >>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Our insertional Destinations-->
-    <!-- <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Our Destinations</h2>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-                <div class="bg-gray-800 rounded-lg overflow-hidden">
-                    <img src="./images/Rectangle 4.png" alt="Maldives" class="w-full h-40 object-cover">
-                    <div class="p-4 items-center">
-                        <h1 class="mb-2 text-lg font-bold text-white text-center">Maldives</h1>
-                        <div class="flex">
-                            <i class="fa-solid fa-star" style="color: #ff9c07;"></i>
-                            <i class="fa-solid fa-star" style="color: #ff9c07;"></i>
-                            <i class="fa-solid fa-star" style="color: #ff9c07;"></i>
-                            <i class="fa-solid fa-star" style="color: #ff9c07;"></i>
-                            <i class="fa-solid fa-star" style="color: #ff9c07;"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
-    <section class="mx-auto layout3">
+    <!--Our insertional Destinations-->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Heading Section -->
         <div class="text-center mb-10">
-            <h1 class="text-4xl font-bold text-amber-600">Our insertional Destinations</h1>
-            <p class="text-gray-400 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non efficitur
-                arcu, id placerat ipsum. Morbi non vestibulum urna.</p>
+            <h1 class="text-3xl md:text-4xl font-bold text-gold Playfair">Our Insertional <span
+                    class="text-white Playfair">Destinations</span></h1>
+            <p class="text-gray-400 mt-2 outfit">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non efficitur arcu, id placerat ipsum.
+                Morbi non vestibulum urna.
+            </p>
         </div>
 
         <!-- Cards Section -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             <!-- Card 1 -->
             <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                 <img class="w-full h-48 object-cover" src="./images/Rectangle 3.png" alt="Maldives">
                 <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">Maldives</h2>
+                    <h2 class="text-lg md:text-xl font-bold mb-2">Maldives</h2>
                     <div class="text-amber-500 flex">
                         ★★★★★
                     </div>
@@ -203,7 +228,7 @@
             <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                 <img class="w-full h-48 object-cover" src="./images/Rectangle 4.png" alt="Koh Sumi">
                 <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">Koh Sumi</h2>
+                    <h2 class="text-lg md:text-xl font-bold mb-2">Koh Sumi</h2>
                     <div class="text-amber-500 flex">
                         ★★★★★
                     </div>
@@ -214,7 +239,7 @@
             <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                 <img class="w-full h-48 object-cover" src="./images/Rectangle 5.png" alt="Canada">
                 <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">Canada</h2>
+                    <h2 class="text-lg md:text-xl font-bold mb-2">Canada</h2>
                     <div class="text-amber-500 flex">
                         ★★★★★
                     </div>
@@ -225,7 +250,7 @@
             <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                 <img class="w-full h-48 object-cover" src="./images/Rectangle 6.png" alt="Dubai">
                 <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">Dubai</h2>
+                    <h2 class="text-lg md:text-xl font-bold mb-2">Dubai</h2>
                     <div class="text-amber-500 flex">
                         ★★★★★
                     </div>
@@ -236,7 +261,7 @@
             <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
                 <img class="w-full h-48 object-cover" src="./images/Rectangle 7.png" alt="Bangkok">
                 <div class="p-4">
-                    <h2 class="text-xl font-bold mb-2">Bangkok</h2>
+                    <h2 class="text-lg md:text-xl font-bold mb-2">Bangkok</h2>
                     <div class="text-amber-500 flex">
                         ★★★★★
                     </div>
@@ -255,16 +280,22 @@
         </div>
     </section>
 
+
     <!-- Certificates Section -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl text-white font-bold mb-8 text-center">Certificates & Awards</h2>
-            <p class="text-white text-center mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
-                efficitur arcu, id placerat ipsum. <br> Morbi non vestibulum urna</p>
-            <div class="flex justify-center space-x-4">
-                <img src="./images/CertificatesSection.png" alt="Certificate 1" class="h-80">
-                <img src="./images/CertificatesSection.png" alt="Certificate 2" class="h-80">
-                <img src="./images/CertificatesSection.png" alt="Certificate 3" class="h-80">
+    <section class="py-16 ">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl text-gold font-bold mb-8 text-center Playfair">Certificates  <span class="text-white">& Awards</span></h2>
+            <p class="text-gray-400 text-center mb-6 outfit ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non efficitur arcu, id placerat ipsum.
+                <br class="hidden md:block"> Morbi non vestibulum urna.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <img src="./images/CertificatesSection.png" alt="Certificate 1"
+                    class="h-40 w-28 sm:h-56 sm:w-40 lg:h-80 lg:w-60 object-cover rounded shadow-lg">
+                <img src="./images/CertificatesSection.png" alt="Certificate 2"
+                    class="h-40 w-28 sm:h-56 sm:w-40 lg:h-80 lg:w-60 object-cover rounded shadow-lg">
+                <img src="./images/CertificatesSection.png" alt="Certificate 3"
+                    class="h-40 w-28 sm:h-56 sm:w-40 lg:h-80 lg:w-60 object-cover rounded shadow-lg">
             </div>
         </div>
     </section>
@@ -274,19 +305,21 @@
     <section class="relative px-4 py-16 md:px-8 lg:px-16">
         <!-- Header -->
         <div class="max-w-7xl mx-auto mb-12">
-            <h2 class="text-gold text-4xl md:text-5xl lg:text-6xl font-serif mb-4">Gallery</h2>
-            <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2 class="text-gold text-4xl md:text-5xl lg:text-6xl font-serif mb-4 Playfair">Gallery</h2>
+            <p class="text-gray-400 outfit">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
 
         <!-- Navigation Arrows -->
         <div class="hidden md:flex absolute right-16 top-16 gap-2 z-10">
             <button onclick="scrollGallery('left')" class="bg-gold hover:bg-gold/80 p-4 transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 text-white">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
                 </svg>
             </button>
             <button onclick="scrollGallery('right')" class="bg-gold hover:bg-gold/80 p-4 transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 text-white">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
             </button>
@@ -317,7 +350,8 @@
         <div class="flex justify-center mt-12">
             <button class="bg-gold hover:bg-gold/80 text-white px-8 py-4 flex items-center gap-2 transition-colors">
                 View All
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-5 h-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                 </svg>
             </button>
@@ -327,7 +361,7 @@
     <!-- Resort Facilities Section -->
     <section class="py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Resort Facilities</h2>
+            <h2 class="text-3xl font-bold mb-8 text-center Playfair">Resort Facilities</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="text-center">
                     <svg class="w-12 h-12 mx-auto mb-4 text-yellow-500" fill="none" stroke="currentColor"
@@ -336,7 +370,7 @@
                             d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
                         </path>
                     </svg>
-                    <h3 class="font-semibold mb-2">Room Service</h3>
+                    <h3 class="font-semibold mb-2 ">Room Service</h3>
                     <p class="text-sm">24/7 room service available</p>
                 </div>
                 <div class="text-center">
@@ -389,11 +423,11 @@
                 </div>
 
                 <!-- Text Content -->
-                <h1 class="text-3xl md:text-5xl font-bold text-white max-w-4xl mx-auto leading-tight">
+                <h1 class="text-3xl md:text-5xl font-bold text-white max-w-4xl mx-auto leading-tight Playfair">
                     <span class="text-gold">Book Hotel Rooms Deals</span> & Book <span class="mt-4">Flights
                         Online.</span>
                 </h1>
-                <p class="text-white/90 mt-4 max-w-2xl mx-auto text-sm md:text-base">
+                <p class="text-white/90 mt-4 max-w-2xl mx-auto text-sm md:text-base outfit">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non efficitur arcu, id placerat
                     ipsum. Morbi non vestibulum urna
                 </p>
@@ -404,9 +438,10 @@
     <!-- Blog Section -->
     <section class="py-16 mt-10">
         <div class="container mx-auto px-4">
-            <h1 class="text-gold text-4xl font-bold mb-8 text-center">Latest News <span class="text-white"> /
+            <h1 class="text-gold text-4xl font-bold mb-8 text-center Playfair">Latest News <span class="text-white"> /
                     Blog</span></h1>
-            <p class="text-gray-300 text-m  mb-8 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p class="text-gray-400 outfit text-m  mb-8 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
                 Nulla non efficitur arcu</p>
             <div class="grid grid-cols-1 md:grid-cols-3">
                 <div
@@ -419,7 +454,7 @@
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gold">Lorem ipsum
                                 dolor sit amet, consec tetur.</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet,
+                        <p class="mb-3 font-normal text-gray-400 dark:text-gray-400 outfit">Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. In ullamcorper facilisis lacus, </p>
                         <div class="flex items-center justify-between">
                             <span class=" font-bold text-gold">Read More >></span>
@@ -439,7 +474,7 @@
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gold">Lorem ipsum
                                 dolor sit amet, consec tetur.</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet,
+                        <p class="mb-3 font-normal text-gray-400 dark:text-gray-400 outfit">Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. In ullamcorper facilisis lacus, </p>
                         <div class="flex items-center justify-between">
                             <span class=" font-bold text-gold">Read More >></span>
@@ -459,7 +494,7 @@
                             <h5 class="mb-2 text-2xl font-bold tracking-tight text-gold">Lorem ipsum
                                 dolor sit amet, consec tetur.</h5>
                         </a>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet,
+                        <p class="mb-3 font-normal text-gray-400 dark:text-gray-400 outfit">Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit. In ullamcorper facilisis lacus, </p>
                         <div class="flex items-center justify-between">
                             <span class=" font-bold text-gold">Read More >></span>
@@ -474,49 +509,25 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="testimonial-bg h-[50vh] flex items-center justify-center px-4">
+    <section class="testimonial-bg h-[50vh] flex items-center justify-center px-4 md:px-8">
         <div class="relative container mx-auto max-w-4xl">
-            <div class="text-center mb-12">
-                <p class="absolute text-white text-lg mb-2 left-10">what says For customer</p>
-                <h2 class="absolute left-10 mt-6 text-2xl md:text-3xl font-bold">
-                    <span class="text-[#E6B980]">what Client's</span>
-                    <span class="text-white">Say ?</span>
+            <div class="text-center mb-8">
+                <p class="absolute text-white text-sm sm:text-lg left-4 md:left-10">
+                    What our customers say
+                </p>
+                <h2 class="absolute left-4 md:left-10 mt-6 text-2xl md:text-3xl font-bold">
+                    <span class="text-[#E6B980]">What Clients</span>
+                    <span class="text-white">Say?</span>
                 </h2>
             </div>
 
             <div class="testimonials-slider relative">
                 <!-- Testimonial 1 -->
                 <div class="slide active">
-                    <div class="flex flex-col md:flex-row items-center gap-8 p-6">
-                        
-                        <div class="w-40 h-60 md:w-50 md:h-50 flex-shrink-0">
-                            <img src="./images/client.png"
-                                alt="Client" class="w-full h-full object-cover rounded-lg shadow-lg">
-                        </div>
-                        <div class="text-white max-w-2xl">
-                            <div class="flex gap-1 mb-4">
-                                <i class="fas fa-star text-yellow-400"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
-                            </div>
-                            <p class="text-sm mb-6">The Blue Mountain Resorts and hospitality and service is outstanding
-                                and I always feel safe to travel with my family to any of their resorts. I am 100%
-                                satisfied with my decision to own this membership, over a year ago. As per me its a
-                                worth it membership. Thanks too Blue mountain Team And staff</p>
-                            <h3 class="text-xl font-semibold mb-1">Jignesh parmar</h3>
-                            <p class="text-[#E6B980]">Guest Review</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="slide">
-                    <div class="flex flex-col md:flex-row items-center gap-8 p-6">
+                    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 p-4 md:p-6">
                         <div class="w-32 h-32 md:w-40 md:h-40 flex-shrink-0">
-                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2076"
-                                alt="Client" class="w-full h-full object-cover rounded-lg shadow-lg">
+                            <img src="./images/client.png" alt="Client"
+                                class="w-full h-full object-cover rounded-lg shadow-lg">
                         </div>
                         <div class="text-white max-w-2xl">
                             <div class="flex gap-1 mb-4">
@@ -526,25 +537,28 @@
                                 <i class="fas fa-star text-yellow-400"></i>
                                 <i class="fas fa-star text-yellow-400"></i>
                             </div>
-                            <p class="text-lg mb-6">Exceptional experience at Blue Mountain! The facilities are
-                                top-notch and the staff goes above and beyond. The membership has been worth every
-                                penny, providing amazing value throughout the year.</p>
-                            <h3 class="text-xl font-semibold mb-1">Sarah Johnson</h3>
+                            <p class="text-sm md:text-base mb-6 outfit">
+                                The Blue Mountain Resorts and hospitality service is outstanding. I always feel safe
+                                traveling with my family. It’s a 100% worthwhile membership. Thanks to the Blue Mountain
+                                Team and staff.
+                            </p>
+                            <h3 class="text-lg md:text-xl font-semibold mb-1">Jignesh Parmar</h3>
                             <p class="text-[#E6B980]">Guest Review</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Navigation Dots -->
-                <div class="flex justify-center gap-2">
-                    <button
-                        class="dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity duration-300"></button>
-                    <button
-                        class="dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity duration-300"></button>
+                <div class="flex justify-center mt-4">
+                    <button aria-label="Slide 1"
+                        class="dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity duration-300 mx-1"></button>
+                    <button aria-label="Slide 2"
+                        class="dot w-3 h-3 rounded-full bg-white opacity-50 transition-opacity duration-300 mx-1"></button>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!--Footer-->
     <footer class="py-8">
@@ -632,6 +646,7 @@
                 extend: {
                     colors: {
                         'gold': '#B08D57',
+                        'broan': '#221409',
                     }
                 }
             }
@@ -695,10 +710,11 @@
             menu.classList.add('hidden');
         });
     </script>
-     <style>
+    <style>
         .hide-scrollbar::-webkit-scrollbar {
             display: none;
         }
+
         .hide-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
@@ -709,7 +725,7 @@
         function scrollGallery(direction) {
             const gallery = document.getElementById('gallery');
             const scrollAmount = 400; // Width of one image container
-            
+
             if (direction === 'left') {
                 gallery.scrollBy({
                     left: -scrollAmount,

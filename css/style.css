@@ -11,10 +11,14 @@ body {
 
 
 .outfit{
-  font-family: "Outfit" !important;
+  font-family: "Outfit" ,serif !important;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+.Playfair{
+    font-family: "Playfair Display", serif !important;
 }
 
 .herolayout{
