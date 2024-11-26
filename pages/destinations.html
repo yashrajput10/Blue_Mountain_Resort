@@ -77,6 +77,7 @@
                 class="w-full h-full object-cover brightness-25">
             <div class="absolute inset-0 flex items-center justify-center">
                 <h1 class="text-4xl md:text-6xl Playfair">Destinations</h1>
+                <img src="../images/Blue Mountain.png" alt="" class="h-20 absolute left-0 bottom-10">
             </div>
         </div>
 
@@ -94,7 +95,7 @@
             </div>
 
             <!-- Cards Section -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center Playfair">
                 <!-- Card 1 -->
                 <div class="md:w-1/1 border border-gray-700 rounded-lg overflow-hidden shadow-lg">
                     <img class="w-full h-50 object-cover" src="../images/maldiv.png" alt="Maldives">
@@ -166,25 +167,33 @@
 
         <!-- Stats Section -->
 
-        <section class="py-20 relative" style="background-image: url('../images/swimin.png');">
+        <section class="py-10 md:py-20 relative"
+            style="background-image: url('../images/swimin.png'); background-size: cover; background-position: center;">
+            <!-- Semi-transparent overlay -->
             <div class="absolute inset-0 bg-black bg-opacity-80"></div>
-            <div class="absolute inset-0 container mx-auto p-10 text-center">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+            <!-- Content container -->
+            <div class="relative container mx-auto px-4 md:px-10 text-center outfit">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                    <!-- Item 1 -->
                     <div>
-                        <h3 class="text-4xl font-bold text-amber-400">22,868</h3>
-                        <p class="text-sm text-white-400">Happy Holiday makers</p>
+                        <h3 class="text-3xl md:text-4xl font-bold text-gold mb-2">22,868</h3>
+                        <p class="text-sm md:text-base text-gray-400">Happy Holiday Makers</p>
                     </div>
+                    <!-- Item 2 -->
                     <div>
-                        <h3 class="text-4xl font-bold text-amber-400">192</h3>
-                        <p class="text-sm text-gray-400">Countries to Visit</p>
+                        <h3 class="text-3xl md:text-4xl font-bold text-gold mb-2">192</h3>
+                        <p class="text-sm md:text-base text-gray-400">Countries to Visit</p>
                     </div>
+                    <!-- Item 3 -->
                     <div>
-                        <h3 class="text-4xl font-bold text-amber-400">24,902</h3>
-                        <p class="text-sm text-gray-400">Miles of Earth to Explore</p>
+                        <h3 class="text-3xl md:text-4xl font-bold text-gold mb-2">24,902</h3>
+                        <p class="text-sm md:text-base text-gray-400">Miles of Earth to Explore</p>
                     </div>
+                    <!-- Item 4 -->
                     <div>
-                        <h3 class="text-4xl font-bold text-amber-400">8,710</h3>
-                        <p class="text-sm text-gray-400">Beaches to Discover</p>
+                        <h3 class="text-3xl md:text-4xl font-bold text-gold mb-2">8,710</h3>
+                        <p class="text-sm md:text-base text-gray-400">Beaches to Discover</p>
                     </div>
                 </div>
             </div>
@@ -194,89 +203,127 @@
 
         <section class="py-20 px-4">
             <div class="container mx-auto text-center">
-                <h2 class="text-3xl mb-2">Where <span class="text-amber-400">Next</span> ?</h2>
-                <p class="text-gray-400 mb-12 max-w-2xl mx-auto">Our team of experts offer mouth watering special
-                    offers.
-                    From adventurous elephant trekking to near-inspiring beaches, our collection of destinations is
-                    unmatched.</p>
+                <h2 class="text-3xl mb-2 font-playfair text-gold">
+                    Where <span class="text-white">Next?</span>
+                </h2>
+                <p class="text-gray-400 mb-12 max-w-2xl mx-auto font-outfit">
+                    Our team of experts offer mouth-watering special offers. From adventurous elephant trekking to
+                    near-inspiring beaches, our collection of destinations is unmatched.
+                </p>
 
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                    <div class="relative overflow-hidden rounded-lg h-64 group">
-                        <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
-                            <h3 class="text-xl font-bold">North Zone</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 font-outfit">
+                    <div class="relative overflow-hidden h-64 group"
+                        style="background-image: url('../images/north.png'); background-size: cover; background-position: center;">
+                        <div class="absolute inset-0 flex items-end bg-black bg-opacity-30">
+                            <h3 class="text-xl font-bold p-4">North Zone</h3>
                         </div>
                     </div>
-                    <div class="relative overflow-hidden rounded-lg h-64 group">
-
-                        <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
-                            <h3 class="text-xl font-bold">South Zone</h3>
+                    <div class="relative overflow-hidden h-64 group"
+                        style="background-image: url('../images/south.png'); background-size: cover; background-position: center;">
+                        <div class="absolute inset-0 flex items-end bg-black bg-opacity-30">
+                            <h3 class="text-xl font-bold p-4 ">South Zone</h3>
                         </div>
                     </div>
-                    <div class="relative overflow-hidden rounded-lg h-64 group">
-                        <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
-                            <h3 class="text-xl font-bold">East Zone</h3>
+                    <div class="relative overflow-hidden h-64 group"
+                        style="background-image: url('../images/east.png'); background-size: cover; background-position: center;">
+                        <div class="absolute inset-0 flex items-end bg-black bg-opacity-30">
+                            <h3 class="text-xl font-bold p-4">East Zone</h3>
                         </div>
                     </div>
-                    <div class="relative overflow-hidden rounded-lg h-64 group">
-                        <div class="absolute inset-0 bg-gray-100 bg-opacity-40 flex items-center justify-center">
-                            <h3 class="text-xl font-bold">West Zone</h3>
+                    <div class="relative overflow-hidden h-64 group"
+                        style="background-image: url('../images/west.png'); background-size: cover; background-position: center;">
+                        <div class="absolute inset-0 flex items-end bg-black bg-opacity-30">
+                            <h3 class="text-xl font-bold p-4 ">West Zone</h3>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+
+
         <!-- Food and Hospitality Section -->
 
-        <section class="py-10 sm:py-16 lg:py-20 px-4">
-            <div class="container mx-auto">
-                <!-- Grid with no gap -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
-                    <!-- Image and Overlay -->
-                    <div class="relative">
-                        <img src="../images/Restaurantd.png" alt="Restaurant"
-                            class="w-full sm:w-3/4 lg:w-2/3 rounded-lg">
-                        <div
-                            class="absolute bottom-4 left-4 sm:left-12 lg:left-16 bg-amber-400 p-4 sm:p-6 rounded-lg shadow-lg">
-                            <p class="text-sm font-semibold">Great hospitality at the key to pride</p>
-                            <p class="text-xs text-gray-700 mt-2">of Britain's longstanding reputation for excellence
-                            </p>
+        <section>
+            <div class="text-white">
+                <div class="container mx-auto px-4 py-8 lg:py-16 flex flex-col lg:flex-row gap-8">
+                    <!-- Image Section -->
+                    <div class="lg:w-1/2 relative md:p-5">
+                        <img src="../images/Restaurantd.png" alt="Hospitality Image" class="rounded-lg w-full">
+                        <div class="bg-gold text-white p-1 w-80 flex absolute md:end-0 bottom-1">
+                            <span class="flex items-center text-xl p-2 "><svg width="35" height="33" viewBox="0 0 35 33"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M28.3432 29.2662L33.0368 31.1347L31.1683 26.4405C31.1309 26.3462 31.1174 26.2443 31.1289 26.1436C31.1404 26.0429 31.1765 25.9466 31.234 25.8632C32.8037 23.5925 33.6327 20.9284 33.6327 18.1582C33.6327 13.4497 31.1603 9.11163 27.2705 6.66047C28.8783 9.06856 29.7423 11.8969 29.7423 14.858C29.7423 18.8119 28.2024 22.5295 25.4065 25.3252C22.6104 28.1205 18.8931 29.6608 14.9392 29.6608C14.1354 29.6608 13.3389 29.5963 12.557 29.4699C17.1036 32.4936 23.128 32.5359 27.7655 29.332C27.849 29.2744 27.9454 29.2383 28.0462 29.2268C28.1469 29.2153 28.2489 29.2289 28.3432 29.2662ZM6.88447 25.9222C7.00827 25.9222 7.12975 25.9596 7.23447 26.0315C9.50523 27.6011 12.1697 28.4302 14.9391 28.4302C22.423 28.4302 28.5121 22.3416 28.5121 14.858C28.5121 7.37407 22.4231 1.28585 14.9391 1.28585C7.45589 1.28585 1.36698 7.37414 1.36698 14.858C1.36698 17.628 2.197 20.2923 3.76599 22.563C3.82349 22.6464 3.85955 22.7426 3.87096 22.8433C3.88237 22.9439 3.86879 23.0458 3.83141 23.1399L1.96328 27.8342L6.65752 25.966C6.72963 25.9369 6.8067 25.922 6.88447 25.9222ZM32.4324 26.2877C34.0237 23.8712 34.8633 21.068 34.8633 18.1582C34.8633 15.0768 33.9253 12.1231 32.1513 9.61646C30.4423 7.20256 28.0895 5.37634 25.3407 4.32654C22.5524 1.57193 18.8624 0.0551758 14.9391 0.0551758C10.9853 0.0551758 7.26804 1.59518 4.47282 4.39101C1.67679 7.18677 0.136719 10.9041 0.136719 14.8579C0.136719 17.7678 0.976103 20.571 2.56833 22.9875L0.291758 28.7064C0.24738 28.8181 0.236671 28.9403 0.260955 29.058C0.285238 29.1757 0.343451 29.2837 0.428408 29.3687C0.513368 29.4537 0.62138 29.512 0.739094 29.5363C0.856807 29.5606 0.979061 29.5499 1.09074 29.5054L6.80996 27.2292C7.70512 27.8191 8.66181 28.3099 9.66315 28.6928C12.0818 31.0793 15.2863 32.5651 18.7038 32.8811C19.1618 32.9236 19.6196 32.9449 20.0773 32.9449C22.962 32.9449 25.7906 32.1075 28.19 30.5298L33.9088 32.8059C34.0205 32.8504 34.1428 32.8612 34.2605 32.8369C34.3782 32.8126 34.4862 32.7543 34.5712 32.6693C34.6564 32.5844 34.7147 32.4763 34.739 32.3585C34.7633 32.2407 34.7525 32.1183 34.7079 32.0066L32.4324 26.2877Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                            Great hospitality is the key to pride <br> of Britain’s longstanding reputation <br> for
+                            excellence.
                         </div>
                     </div>
-                    <!-- Text and Features -->
-                    <div>
-                        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-                            Enjoy Food and Even <span class="text-amber-400">Better</span> Hospitality
+
+                    <!-- Content Section -->
+                    <div class="lg:w-1/2 space-y-8 md:p-5">
+                        <h2 class="text-3xl lg:text-5xl font-bold text-gold Playfair">
+                            Enjoy Food and Even <span class="text-white">Better Hospitality</span>
                         </h2>
-                        <p class="text-gray-600 mb-6">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, neque elementum
-                            ultricies pellentesque.
+                        <p class="text-gray-400 outfit">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, neque euismod
+                            ullamcorper aliquam, ipsum tellus aliquet nibh, id posuere sem tellus et justo. Integer
+                            augue quam, pharetra ut aliquet.
                         </p>
-                        <div class="grid grid-cols-1 sm:grid-cols-2">
-                            <!-- Restaurant Features -->
+
+                        <!-- Features -->
+                        <div class="flex flex-col lg:flex-row gap-8">
+                            <!-- Restaurant Section -->
                             <div>
-                                <h4 class="text-lg font-semibold text-amber-400 mb-2">Restaurant</h4>
-                                <ul class="space-y-2">
-                                    <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i>
-                                        Healthy Food</li>
-                                    <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i>
-                                        Award-Winning Restaurant</li>
+                                <h3 class="text-xl font-bold text-gold mb-4 Playfair">Restaurant</h3>
+                                <ul class="space-y-2 outfit">
+                                    <li class="flex items-center gap-2">
+                                        <span class="text-gold text-xl"><img src="../images/Frame.png" alt=""></span>
+                                        Healthy food
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="text-gold text-xl"><img src="../images/Frame.png" alt=""></span>
+                                        Award-Winning Restaurant
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="text-gold text-xl"><img src="../images/Frame.png" alt=""></span>
+                                        Individually Styled Bedrooms
+                                    </li>
                                 </ul>
                             </div>
-                            <!-- Wellness Features -->
+
+                            <!-- Spa & Wellness Section -->
                             <div>
-                                <h4 class="text-lg font-semibold text-amber-400 mb-2">Wellness</h4>
-                                <ul class="space-y-2">
-                                    <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i>
-                                        Individually Styled Bedrooms</li>
-                                    <li class="flex items-center"><i class="fas fa-check text-amber-400 mr-2"></i>
-                                        Swimming Pool</li>
+                                <h3 class="text-xl font-bold text-gold mb-4 Playfair">Spa & Wellness</h3>
+                                <ul class="space-y-2 outfit">
+                                    <li class="flex items-center gap-2">
+                                        <span class="text-gold text-xl"><img src="../images/Frame.png" alt=""></span>
+                                        Healthy food
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="text-gold text-xl"><img src="../images/Frame.png" alt=""></span>
+                                        Award-Winning Restaurant
+                                    </li>
+                                    <li class="flex items-center gap-2">
+                                        <span class="text-gold text-xl"><img src="../images/Frame.png" alt=""></span>
+                                        Individually Styled Bedrooms
+                                    </li>
                                 </ul>
                             </div>
+                        </div>
+
+                        <!-- Bedroom Images -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <img src="../images/d1.png" alt="Bedroom 1" class="rounded-lg">
+                            <img src="../images/d2.png" alt="Bedroom 2" class="rounded-lg">
                         </div>
                     </div>
                 </div>
             </div>
+
         </section>
 
 
