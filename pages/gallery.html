@@ -28,6 +28,11 @@
 
 <body class="text-white">
 
+     <!-- Preloader -->
+     <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
     <!-- Header -->
     <header class="fixed w-full z-50 bg-transparent">
         <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
@@ -228,6 +233,15 @@
             &copy; Copyright 2015 | Blue Mountain | All Rights Reserved
         </div>
     </footer>
+
+    <script>
+        // JavaScript to hide the preloader after content loads
+        window.addEventListener("load", function () {
+            const preloader = document.getElementById("preloader");
+            preloader.style.display = "none"; // Hide preloader
+            document.querySelector(".content").style.display = "block"; // Show content
+        });
+    </script>
 
     <script>
         // Toggle Menu Script

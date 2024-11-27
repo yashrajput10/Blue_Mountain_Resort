@@ -52,6 +52,11 @@
 
     <main>
 
+        <!-- Preloader -->
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+
         <!-- herosection -->
         <section class="relative about-h flex items-center justify-center mb-20">
             <div class="absolute inset-0">
@@ -357,7 +362,7 @@
                 </ul>
                 <div class="mt-4">
                     <a href="#" class="inline-block hover:none">
-                       <img src="../images/gpay.png" alt="">
+                        <img src="../images/gpay.png" alt="">
                     </a>
                 </div>
             </div>
@@ -380,6 +385,15 @@
                 }
             }
         }
+    </script>
+
+    <script>
+        // JavaScript to hide the preloader after content loads
+        window.addEventListener("load", function () {
+            const preloader = document.getElementById("preloader");
+            preloader.style.display = "none"; // Hide preloader
+            document.querySelector(".content").style.display = "block"; // Show content
+        });
     </script>
 
     <script>
