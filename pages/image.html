@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Top Section -->
+    <section class="w-full ">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+            <!-- Left dark section -->
+            <div class="hidden lg:block"></div>
+            
+            <!-- Center image -->
+            <div class="lg:col-span-1 z-10">
+                <img 
+                    src="../images/about2.png"
+                    alt="Luxury hotel room" 
+                    class="w-full h-[300px] md:h-[400px] object-cover"
+                />
+            </div>
+            
+            <!-- Right dark section -->
+            <div class="hidden lg:block"></div>
+        </div>
+    </section>
+    
+    <!-- Bottom Section -->
+    <section class="container mx-auto px-4 py-16 lg:absolute lg:left-20 lg:top-80">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 items-center">
+            <!-- Left image -->
+            <div class="order-2 md:order-1">
+                <img 
+                    src="../images/about1.png"
+                    alt="Modern staircase" 
+                    class="w-full h-[300px] md:w-[400px] md:h-[400px] mx-auto lg:absolute lg:left-72 lg:top-0"
+                />
+            </div>
+            
+            <!-- Right content -->
+            <div class="order-1 md:order-2 mt-10">
+                <h2 class="text-3xl md:text-4xl font-serif text-[#b68c5a] mb-6">
+                    Enjoy Food and Even Better <span class="text-white">Hospitality</span>
+                </h2>
+                <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, neque euismod ullamcorper aliquam, ipsum tellus aliquet nibh, id posuere sem tellus et justo. Integer augue quam, pharetra ut aliquet ut, vehicula a tellus. Nam nisl sapien, luctus vel luctus eu, ultricies in turpis. Sed ut arcu pharetra, congue est tincidunt, interdum mi.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

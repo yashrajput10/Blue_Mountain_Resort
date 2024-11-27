@@ -34,6 +34,7 @@
             style="background-image: url('../images/homebanner.png');">
             <div class="absolute inset-0 bg-black bg-opacity-75"></div>
             <img src="../images/logo.png" alt="Blue Mountain Logo " class="h-20 z-50">
+            <img src="../images/Menu.png" alt="" class="w-30 absolute left-20 top-30">
             <nav class="z-50">
                 <ul class="space-y-4 text-xl text-white Playfair md:text-4xl text-center">
                     <li><a href="../index.html" class="hover:text-gold">Home</a></li>
@@ -50,7 +51,9 @@
     </header>
 
     <main>
-        <section class="relative about-h flex items-center justify-center">
+
+        <!-- herosection -->
+        <section class="relative about-h flex items-center justify-center mb-20">
             <div class="absolute inset-0">
                 <img src="../images/homebanner.png" alt="Hotel Room" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black opacity-80"></div>
@@ -59,14 +62,54 @@
             <img src="../images/Blue Mountain.png" alt="" class="h-20 absolute left-0 bottom-10">
         </section>
 
-        <section class="flex flex-col md:flex-row gap-6 md:gap-12 py-8 md:py-16">
-            <div class="md:w-1/1">
-                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Enjoy%20Food%20and%20Even%20Better%20Hospitality-XLuZ2IFsVXKoMgExsIvpmsFfOlypBR.png"
-                    alt="Hotel Room" class="w-full h-auto object-cover rounded-lg">
+        <section class="relative w-full">
+            <div class="relative flex justify-center md:justify-end">
+                <img src="../images/Blue Mountain.png" alt="Blue Mountain"
+                    class="w-3/4 md:w-96 md:absolute  z-10 md:right-60 md:top-20 ">
+            </div>
+            <div class="bg-xyz py-20 w-full px-8 absolute top-10">
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
+                <!-- Left dark section -->
+                <div class=" hidden lg:block"></div>
+
+                <!-- Center image -->
+                <div class="lg:col-span-1 z-10">
+                    <img src="../images/about2.png" alt="Luxury hotel room"
+                        class="w-full h-[300px] md:h-[400px] object-cover" />
+                </div>
+
+                <!-- Right dark section -->
+                <div class="hidden lg:block"></div>
+            </div>
+            <div class="container mx-auto px-4 py-20 lg:absolute lg:left-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 items-center">
+                    <!-- Left image -->
+                    <div class="order-2 md:order-1">
+                        <img src="../images/about1.png" alt="Modern staircase"
+                            class="w-full h-[300px] md:w-[400px] md:h-[400px] mx-auto lg:absolute lg:left-72 md:bottom-6" />
+                    </div>
+
+                    <!-- Right content -->
+                    <div class="order-1 md:order-2">
+                        <h2 class="text-3xl md:text-4xl Playfair text-gold mb-2">
+                            Enjoy Food and Even Better <span class="text-white">Hospitality</span>
+                        </h2>
+                        <p class="text-gray-400 leading-relaxed text-sm md:text-base outfit">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, neque euismod
+                            ullamcorper aliquam, ipsum tellus aliquet nibh, id posuere sem tellus et justo. Integer
+                            augue quam, pharetra ut aliquet ut, vehicula a tellus. Nam nisl sapien, luctus vel luctus
+                            eu, ultricies in turpis. Sed ut arcu pharetra, congue est tincidunt, interdum mi.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="container mx-auto max-w-[70%] px-4 py-16 space-y-20">
+        <!-- Bottom Section -->
+
+
+        <section class="container mx-auto max-w-[70%] px-4 py-16 space-y-20 mt-80">
             <div class="flex flex-col md:flex-row items-center gap-8">
                 <div class="custom-container relative">
                     <img src="../images/about3.png" alt="about3" class="w-1/1 h-auto object-cover">
@@ -98,81 +141,91 @@
                 <div class="relative md:w-1/2 aspect-video group cursor-pointer">
                     <img src="../images/about4.png" alt="about4" class="h-full object-cover">
                 </div>
-                <div
-                    class="w-full md:w-1/3 bg-graya p-6  relative md:absolute md:left-60">
-                    <h2 class="text-2xl md:text-4xl mb-4 Playfair"><span class="text-gold">Why Choose Blue </span> Mountain?</h2>
-                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum, neque euismod ullamcorper aliquam, ipsum tellus aliquet nibh, id posuere sem tellus et justo. Integer augue quam.</p>
+                <div class="w-full md:w-1/3 bg-graya p-6  relative md:absolute md:left-60">
+                    <h2 class="text-2xl md:text-4xl mb-4 Playfair"><span class="text-gold">Why Choose Blue </span>
+                        Mountain?</h2>
+                    <p class="text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum,
+                        neque euismod ullamcorper aliquam, ipsum tellus aliquet nibh, id posuere sem tellus et justo.
+                        Integer augue quam.</p>
                     <ul class="list-disc list-inside space-y-2 mt-1">
                         <li class="flex items-center">
-                          <span class="text-accent"><img src="../images/aboutli.png" alt=""></span>
-                          <span class="ml-2">Reliable</span>
+                            <span class="text-accent"><img src="../images/aboutli.png" alt=""></span>
+                            <span class="ml-2">Reliable</span>
                         </li>
                         <li class="flex items-center">
                             <span class="text-accent"><img src="../images/aboutli.png" alt=""></span>
-                          <span class="ml-2">Great Hospitality</span>
+                            <span class="ml-2">Great Hospitality</span>
                         </li>
                         <li class="flex items-center">
                             <span class="text-accent"><img src="../images/aboutli.png" alt=""></span>
-                          <span class="ml-2">100% Client Satisfaction</span>
+                            <span class="ml-2">100% Client Satisfaction</span>
                         </li>
                         <li class="flex items-center">
                             <span class="text-accent"><img src="../images/aboutli.png" alt=""></span>
-                          <span class="ml-2">Pocket Friendly</span>
+                            <span class="ml-2">Pocket Friendly</span>
                         </li>
                         <li class="flex items-center">
                             <span class="text-accent"><img src="../images/aboutli.png" alt=""></span>
-                          <span class="ml-2">Jaw Dropping Deals</span>
+                            <span class="ml-2">Jaw Dropping Deals</span>
                         </li>
                         <li class="flex items-center">
                             <span class="text-accent"><img src="../images/aboutli.png" alt=""></span>
-                          <span class="ml-2">Great Networks And Associations</span>
+                            <span class="ml-2">Great Networks And Associations</span>
                         </li>
                         <li class="flex items-center">
                             <span class="text-accent"><img src="../images/aboutli.png" alt=""></span>
-                          <span class="ml-2">Domestic & International Locations</span>
+                            <span class="ml-2">Domestic & International Locations</span>
                         </li>
-                      </ul>
+                    </ul>
                 </div>
             </div>
         </section>
 
-       <section class="py-20">
-  <div class="bg-xyz text-white py-16 px-8 relative">
-    <div class="max-w-4xl mx-auto text-center md:text-left md:absolute md:left-32">
-      <!-- Main Heading -->
-      <h2 class="text-3xl font-bold text-gray-200 md:text-4xl Playfair">
-        <span class="text-gold">Our</span> Mission
-      </h2>
+        <section class="py-20">
+            <div class="relative flex justify-center md:justify-end">
+                <img src="../images/Our Mission.png" alt="Our Mission"
+                    class="w-3/4 md:w-auto md:absolute md:top-4 z-10 md:right-60">
+            </div>
+            <div class="bg-xyz text-white py-16 px-8 relative">
+                <div class="max-w-4xl mx-auto text-center md:text-left md:absolute md:left-32">
+                    <!-- Main Heading -->
+                    <h2 class="text-3xl font-bold text-gray-200 md:text-4xl Playfair">
+                        <span class="text-gold">Our</span> Mission
+                    </h2>
 
-      <!-- Paragraph Content -->
-      <p class="mt-4 text-gray-300 leading-relaxed text-sm md:text-base">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada ipsum in commodo fringilla. Integer ac tristique tellus. Nam ac velit sed quam sodales tincidunt in sed mi. Integer aliquam est non dolor vestibulum vulputate. Donec ut posuere massa. Nunc ullamcorper enim ac eros tristique varius. Integer ultricies posuere justo.
-      </p>
-    </div>
-  </div>
-  <div class="relative flex justify-center md:justify-end">
-    <img src="../images/Our Mission.png" alt="Our Mission" class="w-3/4 md:w-auto md:absolute md:bottom-6 md:right-60">
-  </div>
-</section>
+                    <!-- Paragraph Content -->
+                    <p class="mt-4 text-gray-300 leading-relaxed text-sm md:text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada ipsum in commodo
+                        fringilla. Integer ac tristique tellus. Nam ac velit sed quam sodales tincidunt in sed mi.
+                        Integer aliquam est non dolor vestibulum vulputate. Donec ut posuere massa. Nunc ullamcorper
+                        enim ac eros tristique varius. Integer ultricies posuere justo.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-<section class="py-20 mb-10">
-  <div class="bg-xyz text-white py-16 px-8 relative">
-    <div class="max-w-4xl mx-auto text-center md:text-left md:absolute md:right-32">
-      <!-- Main Heading -->
-      <h2 class="text-3xl font-bold text-gray-200 md:text-4xl Playfair">
-        <span class="text-gold">Our</span> Vision
-      </h2>
+        <section class="py-20 mb-10">
+            <div class="relative flex justify-center md:justify-start">
+                <img src="../images/Our vision.png" alt="Our Vision"
+                    class="w-3/4 md:w-auto md:absolute z-10 md:left-32">
+            </div>
+            <div class="bg-xyz text-white py-16 px-8 relative">
+                <div class="max-w-4xl mx-auto text-center md:text-left md:absolute md:right-32">
+                    <!-- Main Heading -->
+                    <h2 class="text-3xl font-bold text-gray-200 md:text-4xl Playfair">
+                        <span class="text-gold">Our</span> Vision
+                    </h2>
 
-      <!-- Paragraph Content -->
-      <p class="mt-4 text-gray-300 leading-relaxed text-sm md:text-base">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada ipsum in commodo fringilla. Integer ac tristique tellus. Nam ac velit sed quam sodales tincidunt in sed mi. Integer aliquam est non dolor vestibulum vulputate. Donec ut posuere massa. Nunc ullamcorper enim ac eros tristique varius. Integer ultricies posuere justo.
-      </p>
-    </div>
-  </div>
-  <div class="relative flex justify-center md:justify-start">
-    <img src="../images/Our vision.png" alt="Our Vision" class="w-3/4 md:w-auto md:absolute md:bottom-6 md:left-32">
-  </div>
-</section>
+                    <!-- Paragraph Content -->
+                    <p class="mt-4 text-gray-300 leading-relaxed text-sm md:text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada ipsum in commodo
+                        fringilla. Integer ac tristique tellus. Nam ac velit sed quam sodales tincidunt in sed mi.
+                        Integer aliquam est non dolor vestibulum vulputate. Donec ut posuere massa. Nunc ullamcorper
+                        enim ac eros tristique varius. Integer ultricies posuere justo.
+                    </p>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -248,7 +301,7 @@
                 <h3 class="text-lg font-semibold text-gold mb-4 Playfair">Information</h3>
                 <ul class="text-gray-400 space-y-2 outfit">
                     <li class="flex items-center space-x-2">
-                        <svg width="35" height="35" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="40" height="40" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="15" r="15" fill="#AA8453" />
                             <path
                                 d="M14.9997 7C11.8045 7 9.20508 9.59944 9.20508 12.7946C9.20508 16.7598 14.3907 22.581 14.6115 22.8269C14.8188 23.0579 15.1809 23.0575 15.3879 22.8269C15.6087 22.581 20.7943 16.7598 20.7943 12.7946C20.7942 9.59944 18.1948 7 14.9997 7ZM14.9997 15.71C13.3921 15.71 12.0843 14.4021 12.0843 12.7946C12.0843 11.187 13.3921 9.87919 14.9997 9.87919C16.6072 9.87919 17.915 11.187 17.915 12.7946C17.915 14.4022 16.6072 15.71 14.9997 15.71Z"
@@ -303,8 +356,8 @@
                     </li>
                 </ul>
                 <div class="mt-4">
-                    <a href="#" class="inline-block text-white border py-2 px-4 rounded hover:bg-yellow-600">
-                        <i class="fab fa-google-play"></i> Google Play
+                    <a href="#" class="inline-block hover:none">
+                       <img src="../images/gpay.png" alt="">
                     </a>
                 </div>
             </div>
