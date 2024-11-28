@@ -103,57 +103,66 @@
             </button>
 
             <!-- Hero Layout -->
-            <div class="mt-24 p-3 text-white w-full max-w-4xl bg-broan">
-                <div
-                    class="flex flex-wrap justify-center sm:justify-between items-center space-y-4 sm:space-y-0 outfit ">
-                    <!-- Check-in -->
-                    <div class="flex items-center space-x-2 p-2">
-                        <span class="tracking-tight">Check in</span>
-                        <i class="fa-solid fa-calendar-days"></i>
+            <div class="mt-24 p-3 text-white w-full max-w-4xl bg-broan outfit">
+                <div class="text-white rounded-lg shadow-lg w-full max-w-4xl">
+                    <div class="grid grid-cols-1 md:grid-cols-6">
+                      <!-- Check In -->
+                      <div class="flex items-center border border-borderclo p-1">
+                          <input
+                            type="text"
+                            placeholder="Check in"
+                            class="bg-transparent outline-none w-full text-white placeholder-gray-400"
+                          />
+                        <span class="mr-2 text-gray-400"><i class="fas fa-calendar-alt"></i></span>
+                      </div>
+                      <!-- Check Out -->
+                      <div class="flex items-center border border-borderclo p-1 ">
+                          <input
+                            type="text"
+                            placeholder="Check out"
+                            class="bg-transparent outline-none w-full text-white placeholder-gray-400"
+                          />
+                        <span class="mr-2 text-gray-400"><i class="fas fa-calendar-alt"></i></span>
+                      </div>
+                      <!-- Adults -->
+                      <div class="flex items-center border border-borderclo p-1">
+                        <select
+                          class=" bg-broan outline-none w-full text-white"
+                        >
+                          <option>1 Adult</option>
+                          <option>2 Adults</option>
+                          <option>3 Adults</option>
+                        </select>
+                      </div>
+                      <!-- Children -->
+                      <div class="flex items-center border border-borderclo p-1 ">
+                        <select
+                          class="bg-broan outline-none w-full text-white"
+                        >
+                          <option>Children</option>
+                          <option>1 Child</option>
+                          <option>2 Children</option>
+                        </select>
+                      </div>
+                      <!-- Rooms -->
+                      <div class="flex items-center border border-borderclo p-1 ">
+                        <select
+                          class=" bg-broan outline-none w-full text-white"
+                        >
+                          <option>1 Room</option>
+                          <option>2 Rooms</option>
+                          <option>3 Rooms</option>
+                        </select>
+                      </div>
+                      <!-- Button -->
+                      <div>
+                        <button class="bg-gold hover:bg-yellow-700 transition w-full h-full py-2 px-4 ">
+                          Check Now
+                        </button>
+                      </div>
                     </div>
-
-                    <!-- Check-out -->
-                    <div class="flex items-center space-x-2 p-2 ">
-                        <span>Check out</span>
-                        <i class="fa-solid fa-calendar-days"></i>
-                    </div>
-
-                    <!-- Adults -->
-                    <div class="flex items-center space-x-2 p-2">
-                        <span>1 Adult</span>
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </div>
-
-                    <!-- Children -->
-                    <div class="flex items-center space-x-2 p-2">
-                        <span>Children</span>
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </div>
-
-                    <!-- Rooms -->
-                    <div class="flex items-center space-x-2 p-2">
-                        <span>1 Room</span>
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
-                            </path>
-                        </svg>
-                    </div>
-
-                    <!-- Check Now Button -->
-                    <button class="px-6 py-2 bg-gold text-white hover:bg-opacity-90 transition duration-300">
-                        Check Now
-                    </button>
-                    <img src="./images/Blue Mountain.png" alt="" class="h-30 absolute right-16 bottom-72">
-                </div>
+                  </div>
+                <img src="./images/Blue Mountain.png" alt="" class="h-30 absolute right-16 bottom-72">
             </div>
         </div>
     </section>
@@ -718,6 +727,7 @@
                     colors: {
                         'gold': '#B08D57',
                         'broan': '#221409',
+                        'borderclo': '#2D1F14',
                     }
                 }
             }
