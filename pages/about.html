@@ -68,33 +68,40 @@
         </section>
 
         <section class="w-full relative">
-            <div class="relative flex justify-center md:justify-end">
+            <!-- Top image -->
+            <div class="relative flex justify-center">
                 <img src="../images/Blue Mountain.png" alt="Blue Mountain"
-                    class="w-3/4 md:w-96 md:absolute  z-10 md:right-60 md:top-20 shadow-lg hover:scale-105 transition-transform duration-300 ">
+                    class="w-3/4 md:w-96 absolute md:right-60 md:top-20 shadow-lg hover:scale-105 transition-transform duration-300 z-10" />
             </div>
-            <div class="bg-xyz py-20 w-full px-8 absolute top-10 ">
+        
+            <!-- Background section -->
+            <div class="bg-xyz py-20 w-full px-8 absolute top-10">
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
+        
+            <!-- Middle image grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <!-- Left dark section -->
-                <div class=" hidden lg:block"></div>
-
+                <div class="hidden md:block"></div>
+        
                 <!-- Center image -->
-                <div class="lg:col-span-1 z-10">
+                <div class="md:col-span-1 z-10">
                     <img src="../images/about2.png" alt="Luxury hotel room"
                         class="w-full h-[300px] md:h-[400px] object-cover shadow-lg hover:scale-105 transition-transform duration-300" />
                 </div>
-
+        
                 <!-- Right dark section -->
-                <div class="hidden lg:block"></div>
+                <div class="hidden md:block"></div>
             </div>
-            <div class="container mx-auto px-4 py-20 lg:absolute lg:left-20">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 items-center">
+        
+            <!-- Bottom content section -->
+            <div class="container mx-auto px-4 py-20 absolute md:left-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <!-- Left image -->
                     <div class="order-2 md:order-1">
                         <img src="../images/about1.png" alt="Modern staircase"
-                            class="h-[300px] md:w-[400px] md:h-[400px] mx-auto lg:absolute lg:left-72 md:bottom-6 shadow-lg hover:scale-105 transition-transform duration-300" />
+                            class="h-[300px] md:w-[400px] md:h-[400px] mx-auto absolute md:left-72 bottom-6 shadow-lg hover:scale-105 transition-transform duration-300" />
                     </div>
-
+        
                     <!-- Right content -->
                     <div class="order-1 md:order-2">
                         <h2 class="text-3xl md:text-4xl Playfair text-gold mb-2">
@@ -110,7 +117,7 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Bottom Section -->
 
 
