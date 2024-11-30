@@ -395,7 +395,7 @@
                 <img src="./images/CertificatesSection.png" alt="Certificate 2"
                     class="h-40 w-28 sm:h-56 sm:w-40 lg:h-80 lg:w-60 object-cover rounded shadow-lg hover:scale-105 transition-transform duration-300">
                 <img src="./images/CertificatesSection.png" alt="Certificate 3"
-                    class="h-40 w-28 sm:h-56 sm:w-40 lg:h-80 lg:w-60 object-cover rounded shadow-lg hover:scale-105 transition-transform duration-300">
+                    class="hidden md:flex h-40 w-28 sm:h-56 sm:w-40 lg:h-80 lg:w-60 object-cover rounded shadow-lg hover:scale-105 transition-transform duration-300">
             </div>
         </div>
     </section>
@@ -410,11 +410,11 @@
         </div>
 
         <!-- Navigation Arrows -->
-        <div class="hidden md:flex absolute right-16 top-16 gap-2 z-10">
-            <button onclick="scrollGallery('left')" class="bg-gold hover:bg-gold/80 p-4 transition-colors">
+        <div class="absolute right-16 top-16 gap-2 z-10">
+            <button onclick="scrollGallery('left')" class="bg-gold hover:bg-gold/80 px-1 md:p-4 transition-colors">
                 ←
             </button>
-            <button onclick="scrollGallery('right')" class="bg-gold hover:bg-gold/80 p-4 transition-colors">
+            <button onclick="scrollGallery('right')" class="bg-gold hover:bg-gold/80 px-1 md:p-4 transition-colors">
                 →
             </button>
         </div>
@@ -422,23 +422,23 @@
         <!-- Gallery Container -->
         <div class="gallery-container overflow-x-auto hide-scrollbar" id="gallery">
             <div class="flex gap-4 min-w-max">
-                <div class="w-[300px] md:w-[400px] h-[400px] relative">
+                <div class="w-[280px] md:w-[400px] h-[400px] relative">
                     <img src="./images/Rectangle 16.png" alt="Oceanview deck"
                         class="w-full h-full object-cover shadow-lg hover:scale-105 transition-transform duration-300">
                 </div>
-                <div class="w-[300px] md:w-[400px] h-[400px] relative">
+                <div class="w-[280px] md:w-[400px] h-[400px] relative">
                     <img src="./images/Rectangle 17.png" alt="Evening exterior"
                         class="w-full h-full object-cover shadow-lg hover:scale-105 transition-transform duration-300">
                 </div>
-                <div class="w-[300px] md:w-[400px] h-[400px] relative">
+                <div class="w-[280px] md:w-[400px] h-[400px] relative">
                     <img src="./images/Rectangle 18.png" alt="Living space"
                         class="w-full h-full object-cover shadow-lg hover:scale-105 transition-transform duration-300">
                 </div>
-                <div class="w-[300px] md:w-[400px] h-[400px] relative">
+                <div class="w-[280px] md:w-[400px] h-[400px] relative">
                     <img src="./images/Rectangle 19.png" alt="Pool area"
                         class="w-full h-full object-cover shadow-lg hover:scale-105 transition-transform duration-300">
                 </div>
-                <div class="w-[300px] md:w-[400px] h-[400px] relative ">
+                <div class="w-[280px] md:w-[400px] h-[400px] relative ">
                     <img src="./images/Rectangle 20.png" alt="Infinity pool"
                         class="w-full h-full object-cover shadow-lg hover:scale-105 transition-transform duration-300 ">
                 </div>
