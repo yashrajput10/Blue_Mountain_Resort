@@ -362,8 +362,7 @@
                 <div class="absolute flex justify-center items-center m-auto bottom-1 left-0 right-0 w-fit md:bottom-0">
                     <div class="flex justify-center items-center mt-8 space-x-4 " id="slider-button-left"
                         data-carousel-prev>
-                        <button
-                            class="swiper-prev bg-gold hover:bg-amber-700 text-white font-bold py-2 px-4">
+                        <button class="swiper-prev bg-gold hover:bg-amber-700 text-white font-bold py-2 px-4">
                             ←
                         </button>
                         <button class="swiper-next bg-gold hover:bg-amber-700 text-white font-bold py-2 px-4"
@@ -447,13 +446,15 @@
 
         <!-- View All Button -->
         <div class="flex justify-center mt-12">
-            <button class="bg-gold hover:bg-gold/80 text-white px-8 py-4 flex items-center gap-2 transition-colors">
+            <button class="bg-gold hover:bg-gold/80 text-white px-8 py-4 flex items-center gap-2 transition-colors"
+                onclick="viewAllGallery()">
                 View All
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-5 h-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                 </svg>
             </button>
+
         </div>
     </section>
 
@@ -887,7 +888,17 @@
                 });
             }
         }
+
+        function viewAllGallery() {
+            const gallery = document.getElementById('gallery');
+            if (gallery) {
+                gallery.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
     </script>
+
+
 </body>
 
 </html>
