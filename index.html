@@ -58,10 +58,11 @@
         <!-- Toggle Menu -->
         <div id="menu"
             class="hidden fixed inset-0 flex flex-col items-center justify-center z-50 space-y-6 transition-all duration-300"
-            style="background-image: url('./images/homebanner.png?height=1080&width=1920');">
-            <div class="absolute inset-0 bg-black bg-opacity-75"></div>
-            <img src="./images/logo.png" alt="Blue Mountain Logo " class="h-20 z-50">
-            <img src="./images/Menu.png" alt="" class="w-30 absolute left-20 top-30">
+            style="background-image: url('./images/homebanner.png'); background-size: cover; background-position: center;">
+            <!-- Add blur effect -->
+            <div class="absolute inset-0 bg-black bg-opacity-75 backdrop-blur-md"></div>
+            <img src="./images/logo.png" alt="Blue Mountain Logo " class="hidden md:flex md:h-20 z-50">
+            <img src="./images/Menu.png" alt="" class="absolute w-52 bottom-6 md:w-[30%]  md:left-20 md:bottom-96">
             <nav class="z-50">
                 <ul class="space-y-4 text-xl text-white Playfair md:text-4xl text-center">
                     <li><a href="./index.html" class="hover:text-gold">Home</a></li>
@@ -73,8 +74,24 @@
                 </ul>
 
             </nav>
+
+            <div><img src="./images/logo.png" alt="Blue Mountain Logo "
+                    class="visible md:hidden h-10 top-11 left-2 absolute"></div>
             <button id="close-menu" class="absolute top-6 right-6 text-white text-2xl">
-                &#x2716;
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle opacity="0.1" cx="20" cy="20" r="20" fill="#D9D9D9" />
+                    <g clip-path="url(#clip0_108_6367)">
+                        <path
+                            d="M21.649 20.0147L28.658 13.0057C29.1141 12.5498 29.1141 11.8126 28.658 11.3567C28.2021 10.9008 27.4649 10.9008 27.009 11.3567L19.9999 18.3657L12.9911 11.3567C12.5349 10.9008 11.798 10.9008 11.3421 11.3567C10.886 11.8126 10.886 12.5498 11.3421 13.0057L18.3509 20.0147L11.3422 27.0238C10.886 27.4797 10.886 28.2169 11.3422 28.6727C11.4503 28.7812 11.5788 28.8672 11.7203 28.9258C11.8618 28.9845 12.0135 29.0146 12.1666 29.0144C12.4651 29.0144 12.7637 28.9001 12.9911 28.6727L19.9999 21.6637L27.009 28.6727C27.1172 28.7812 27.2457 28.8672 27.3872 28.9258C27.5287 28.9844 27.6804 29.0145 27.8335 29.0144C28.132 29.0144 28.4306 28.9001 28.658 28.6727C29.1141 28.2168 29.1141 27.4797 28.658 27.0238L21.649 20.0147Z"
+                            fill="#AA8453" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_108_6367">
+                            <rect width="18" height="18" fill="white" transform="translate(11 11)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
             </button>
         </div>
     </header>
@@ -100,12 +117,13 @@
 
             <!-- Button -->
             <button
-                class="mt-6 bg-transparent backdrop-blur-md text-white border border-white items-center justify-center px-8 py-3 z-40 hover:bg-white hover:text-black transition duration-300">
+                class=" md:mt-6 bg-transparent backdrop-blur-md text-white border px-2 border-white items-center justify-center md:px-8 md:py-3 z-40 hover:bg-white hover:text-black transition duration-300">
                 Book Now &gt;&gt;
             </button>
 
             <!-- Hero Layout -->
-            <div class="absolute bottom-0 md:bottom-10 xl:bottom-24 mt-24 p-3 text-white w-full max-w-4xl bg-broan outfit">
+            <div
+                class="absolute bottom-0 md:bottom-10 xl:bottom-24 mt-24 p-3 text-white w-full max-w-4xl bg-broan outfit">
                 <div class="text-white rounded-lg shadow-lg w-full max-w-4xl">
                     <div class="grid grid-cols-1 md:grid-cols-6">
                         <!-- Check In -->
@@ -181,7 +199,7 @@
                 </div>
                 <!-- Content Section -->
                 <div class="md:w-1/3 md:pl-12  md:text-left">
-                   
+
                     <h5 class="text-white font-bold mb-4 text-lg Playfair">Blue Mountain</h5>
                     <h2 class="text-3xl font-bold mb-4 text-gold Playfair relative">Who We <span
                             class="text-white Playfair">Are
@@ -444,7 +462,7 @@
                     <img src="./images/Rectangle 20.png" alt="Infinity pool"
                         class="w-full h-full object-cover shadow-lg hover:scale-105 transition-transform duration-300 ">
                 </div>
-                
+
             </div>
         </div>
 
@@ -477,10 +495,13 @@
             <!-- Room Service -->
             <div
                 class="text-center p-6 border border-gray-600 hover:border-gold hover:text-gold flex flex-col items-center justify-center space-y-4">
-                <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-white hover:fill-gold">
-                    <path d="M60.9375 36.5625V50.7812C60.9375 51.32 60.7235 51.8366 60.3426 52.2176C59.9616 52.5985 59.445 52.8125 58.9062 52.8125C58.3675 52.8125 57.8509 52.5985 57.4699 52.2176C57.089 51.8366 56.875 51.32 56.875 50.7812V48.75H8.125V50.7812C8.125 51.32 7.91099 51.8366 7.53006 52.2176C7.14913 52.5985 6.63247 52.8125 6.09375 52.8125C5.55503 52.8125 5.03837 52.5985 4.65744 52.2176C4.27651 51.8366 4.0625 51.32 4.0625 50.7812V36.5625C4.0625 33.2028 6.79656 30.4688 10.1562 30.4688H54.8438C58.2034 30.4688 60.9375 33.2028 60.9375 36.5625ZM10.1562 26.4062V14.2188C10.1562 13.68 10.3703 13.1634 10.7512 12.7824C11.1321 12.4015 11.6488 12.1875 12.1875 12.1875H52.8125C53.3512 12.1875 53.8679 12.4015 54.2488 12.7824C54.6297 13.1634 54.8438 13.68 54.8438 14.2188V26.4062H48.75V24.375C48.75 22.1345 46.928 20.3125 44.6875 20.3125H38.5938C36.3533 20.3125 34.5312 22.1345 34.5312 24.375V26.4062H30.4688V24.375C30.4688 22.1345 28.6467 20.3125 26.4062 20.3125H20.3125C18.072 20.3125 16.25 22.1345 16.25 24.375V26.4062H10.1562Z" fill=""/>
-                    </svg>
-                    <h3 class="text-xl mb-4">Room Service</h3>
+                <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="fill-white hover:fill-gold">
+                    <path
+                        d="M60.9375 36.5625V50.7812C60.9375 51.32 60.7235 51.8366 60.3426 52.2176C59.9616 52.5985 59.445 52.8125 58.9062 52.8125C58.3675 52.8125 57.8509 52.5985 57.4699 52.2176C57.089 51.8366 56.875 51.32 56.875 50.7812V48.75H8.125V50.7812C8.125 51.32 7.91099 51.8366 7.53006 52.2176C7.14913 52.5985 6.63247 52.8125 6.09375 52.8125C5.55503 52.8125 5.03837 52.5985 4.65744 52.2176C4.27651 51.8366 4.0625 51.32 4.0625 50.7812V36.5625C4.0625 33.2028 6.79656 30.4688 10.1562 30.4688H54.8438C58.2034 30.4688 60.9375 33.2028 60.9375 36.5625ZM10.1562 26.4062V14.2188C10.1562 13.68 10.3703 13.1634 10.7512 12.7824C11.1321 12.4015 11.6488 12.1875 12.1875 12.1875H52.8125C53.3512 12.1875 53.8679 12.4015 54.2488 12.7824C54.6297 13.1634 54.8438 13.68 54.8438 14.2188V26.4062H48.75V24.375C48.75 22.1345 46.928 20.3125 44.6875 20.3125H38.5938C36.3533 20.3125 34.5312 22.1345 34.5312 24.375V26.4062H30.4688V24.375C30.4688 22.1345 28.6467 20.3125 26.4062 20.3125H20.3125C18.072 20.3125 16.25 22.1345 16.25 24.375V26.4062H10.1562Z"
+                        fill="" />
+                </svg>
+                <h3 class="text-xl mb-4">Room Service</h3>
                 <p class="text-gray-400 hover:text-gold ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur.
                     Fusce tincidunt purus
@@ -491,19 +512,26 @@
             <!-- Breakfast -->
             <div
                 class="text-center p-6 border border-gray-600 hover:border-gold  hover:text-gold flex flex-col items-center justify-center space-y-4">
-                <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-white hover:fill-gold">
+                <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="fill-white hover:fill-gold">
                     <g clip-path="url(#clip0_48_377)">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.79109 65.0001H57.1014C60.316 64.996 63.0796 62.7209 63.7012 59.567C63.7276 59.407 63.7187 59.2431 63.6749 59.0869C63.6312 58.9307 63.5538 58.786 63.4482 58.663C63.3425 58.5399 63.2112 58.4415 63.0634 58.3746C62.9156 58.3078 62.755 58.2741 62.5928 58.276H2.29968C2.13731 58.2738 1.97644 58.3072 1.82841 58.3739C1.68037 58.4406 1.54877 58.539 1.44288 58.6621C1.33699 58.7852 1.25939 58.9301 1.21555 59.0864C1.17171 59.2428 1.1627 59.4068 1.18914 59.567C1.81072 62.7218 4.57565 64.9971 7.79109 65.0001ZM32.4462 24.6553H33.9188C34.0701 24.069 34.2726 23.4971 34.524 22.9462C34.5495 22.893 34.5608 22.8341 34.5569 22.7752C34.553 22.7163 34.5339 22.6594 34.5016 22.61C34.4631 22.5484 34.4096 22.4975 34.3461 22.462C34.2826 22.4265 34.2112 22.4077 34.1385 22.4072H10.5703C10.4994 22.4091 10.4301 22.4286 10.3687 22.464C10.3072 22.4994 10.2556 22.5496 10.2184 22.61C10.1853 22.6591 10.1656 22.7159 10.1615 22.775C10.1574 22.834 10.1689 22.8931 10.1948 22.9462C10.8234 24.2522 11.1508 25.6827 11.153 27.1321V51.5519H30.4995C30.3065 50.8204 30.2075 50.0672 30.2048 49.3105V26.8966C30.2049 25.6587 31.2083 24.6553 32.4462 24.6553ZM59.3428 31.3794V44.8277C61.8186 44.8277 63.8255 42.8208 63.8255 40.345V35.8623C63.8255 33.3864 61.8186 31.3794 59.3428 31.3794Z" fill=""/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M32.4463 30.2586H57.1015V28.0171C57.1015 27.3982 56.5997 26.8965 55.9809 26.8965H32.4463V30.2586ZM39.1705 56.0345H50.3774C54.0895 56.0309 57.0978 53.0224 57.1015 49.3104V32.5H32.4463V49.3103C32.4501 53.0224 35.4584 56.0308 39.1705 56.0345Z" fill=""/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.67052 27.1465V53.7932C6.67052 55.031 7.67405 56.0346 8.91193 56.0346H33.26C32.5292 55.3914 31.9071 54.6346 31.4176 53.7932H11.1532C9.91535 53.7932 8.91182 52.7896 8.91182 51.5517V27.132C8.90934 26.014 8.6554 24.9109 8.16881 23.9043C7.98253 23.5103 7.89872 23.0755 7.92516 22.6404C7.9516 22.2053 8.08743 21.784 8.32007 21.4153C8.55794 21.0346 8.88808 20.72 9.27989 20.5008C9.67171 20.2816 10.1125 20.1648 10.5615 20.1613H34.1498C34.6002 20.1636 35.0427 20.2798 35.4361 20.499C35.8296 20.7183 36.1612 21.0335 36.4001 21.4153C36.6326 21.7834 36.7685 22.2041 36.7952 22.6386C36.8218 23.0731 36.7384 23.5073 36.5525 23.901C36.4412 24.1472 36.3425 24.399 36.2567 24.6552H38.6864C38.877 24.258 39.1169 23.8864 39.4002 23.5491C39.9541 22.9258 40.2697 22.1267 40.2912 21.2932C40.2912 19.4364 38.7859 17.9311 36.9291 17.9311H7.79128C5.94452 17.9552 4.45333 19.4464 4.42922 21.2932C4.42675 22.0942 4.71235 22.8694 5.23391 23.4774C6.13586 24.4895 6.64551 25.7911 6.67052 27.1465ZM44.774 14.569C44.774 15.1879 45.2758 15.6897 45.8947 15.6897C46.5135 15.6897 47.0153 15.1879 47.0153 14.569C47.0359 13.1321 46.5751 11.7297 45.7064 10.5849C45.0835 9.8094 44.7534 8.83939 44.774 7.84489C44.7534 6.8504 45.0835 5.88038 45.7064 5.10484C46.5752 3.96015 47.0359 2.55766 47.0153 1.12076C47.0153 0.501872 46.5135 0.000107652 45.8947 0.000107652C45.2758 0.000107652 44.774 0.501872 44.774 1.12076C44.7946 2.11525 44.4645 3.08527 43.8416 3.86081C42.9728 5.0055 42.5121 6.40799 42.5327 7.84489C42.5121 9.28179 42.9729 10.6843 43.8416 11.829C44.4645 12.6045 44.7946 13.5745 44.774 14.569ZM52.0518 11.8075C52.3836 12.3305 53.0764 12.4856 53.5995 12.1539C54.1225 11.8221 54.2776 11.1292 53.9458 10.6062C53.8124 10.3977 53.6734 10.2004 53.5334 10.0021C52.9265 9.30098 52.6007 8.39991 52.6189 7.47274C52.6002 6.54531 52.9265 5.64396 53.5345 4.94336C54.4085 3.86264 54.8774 2.51047 54.8602 1.12065C54.8602 0.501764 54.3584 0 53.7395 0C53.1207 0 52.6189 0.501764 52.6189 1.12065C52.6376 2.04809 52.3113 2.94943 51.7033 3.65003C50.8293 4.73076 50.3603 6.08292 50.3776 7.47274C50.3603 8.86203 50.8288 10.2137 51.7022 11.2943C51.821 11.4624 51.9465 11.6294 52.0518 11.8075ZM36.3621 11.8075C36.6939 12.3305 37.3867 12.4856 37.9098 12.1539C38.4328 11.8221 38.5879 11.1292 38.2561 10.6062C38.1227 10.3977 37.9838 10.2004 37.8437 10.0021C37.2368 9.30098 36.911 8.39991 36.9292 7.47274C36.9105 6.54531 37.2368 5.64396 37.8448 4.94336C38.7188 3.86264 39.1878 2.51047 39.1705 1.12065C39.1705 0.501764 38.6688 0 38.0499 0C37.431 0 36.9292 0.501764 36.9292 1.12065C36.9479 2.04809 36.6216 2.94943 36.0136 3.65003C35.1396 4.73076 34.6707 6.08292 34.6879 7.47274C34.6706 8.86203 35.1391 10.2137 36.0126 11.2943C36.1313 11.4624 36.2568 11.6294 36.3621 11.8075Z" fill=""/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.79109 65.0001H57.1014C60.316 64.996 63.0796 62.7209 63.7012 59.567C63.7276 59.407 63.7187 59.2431 63.6749 59.0869C63.6312 58.9307 63.5538 58.786 63.4482 58.663C63.3425 58.5399 63.2112 58.4415 63.0634 58.3746C62.9156 58.3078 62.755 58.2741 62.5928 58.276H2.29968C2.13731 58.2738 1.97644 58.3072 1.82841 58.3739C1.68037 58.4406 1.54877 58.539 1.44288 58.6621C1.33699 58.7852 1.25939 58.9301 1.21555 59.0864C1.17171 59.2428 1.1627 59.4068 1.18914 59.567C1.81072 62.7218 4.57565 64.9971 7.79109 65.0001ZM32.4462 24.6553H33.9188C34.0701 24.069 34.2726 23.4971 34.524 22.9462C34.5495 22.893 34.5608 22.8341 34.5569 22.7752C34.553 22.7163 34.5339 22.6594 34.5016 22.61C34.4631 22.5484 34.4096 22.4975 34.3461 22.462C34.2826 22.4265 34.2112 22.4077 34.1385 22.4072H10.5703C10.4994 22.4091 10.4301 22.4286 10.3687 22.464C10.3072 22.4994 10.2556 22.5496 10.2184 22.61C10.1853 22.6591 10.1656 22.7159 10.1615 22.775C10.1574 22.834 10.1689 22.8931 10.1948 22.9462C10.8234 24.2522 11.1508 25.6827 11.153 27.1321V51.5519H30.4995C30.3065 50.8204 30.2075 50.0672 30.2048 49.3105V26.8966C30.2049 25.6587 31.2083 24.6553 32.4462 24.6553ZM59.3428 31.3794V44.8277C61.8186 44.8277 63.8255 42.8208 63.8255 40.345V35.8623C63.8255 33.3864 61.8186 31.3794 59.3428 31.3794Z"
+                            fill="" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M32.4463 30.2586H57.1015V28.0171C57.1015 27.3982 56.5997 26.8965 55.9809 26.8965H32.4463V30.2586ZM39.1705 56.0345H50.3774C54.0895 56.0309 57.0978 53.0224 57.1015 49.3104V32.5H32.4463V49.3103C32.4501 53.0224 35.4584 56.0308 39.1705 56.0345Z"
+                            fill="" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6.67052 27.1465V53.7932C6.67052 55.031 7.67405 56.0346 8.91193 56.0346H33.26C32.5292 55.3914 31.9071 54.6346 31.4176 53.7932H11.1532C9.91535 53.7932 8.91182 52.7896 8.91182 51.5517V27.132C8.90934 26.014 8.6554 24.9109 8.16881 23.9043C7.98253 23.5103 7.89872 23.0755 7.92516 22.6404C7.9516 22.2053 8.08743 21.784 8.32007 21.4153C8.55794 21.0346 8.88808 20.72 9.27989 20.5008C9.67171 20.2816 10.1125 20.1648 10.5615 20.1613H34.1498C34.6002 20.1636 35.0427 20.2798 35.4361 20.499C35.8296 20.7183 36.1612 21.0335 36.4001 21.4153C36.6326 21.7834 36.7685 22.2041 36.7952 22.6386C36.8218 23.0731 36.7384 23.5073 36.5525 23.901C36.4412 24.1472 36.3425 24.399 36.2567 24.6552H38.6864C38.877 24.258 39.1169 23.8864 39.4002 23.5491C39.9541 22.9258 40.2697 22.1267 40.2912 21.2932C40.2912 19.4364 38.7859 17.9311 36.9291 17.9311H7.79128C5.94452 17.9552 4.45333 19.4464 4.42922 21.2932C4.42675 22.0942 4.71235 22.8694 5.23391 23.4774C6.13586 24.4895 6.64551 25.7911 6.67052 27.1465ZM44.774 14.569C44.774 15.1879 45.2758 15.6897 45.8947 15.6897C46.5135 15.6897 47.0153 15.1879 47.0153 14.569C47.0359 13.1321 46.5751 11.7297 45.7064 10.5849C45.0835 9.8094 44.7534 8.83939 44.774 7.84489C44.7534 6.8504 45.0835 5.88038 45.7064 5.10484C46.5752 3.96015 47.0359 2.55766 47.0153 1.12076C47.0153 0.501872 46.5135 0.000107652 45.8947 0.000107652C45.2758 0.000107652 44.774 0.501872 44.774 1.12076C44.7946 2.11525 44.4645 3.08527 43.8416 3.86081C42.9728 5.0055 42.5121 6.40799 42.5327 7.84489C42.5121 9.28179 42.9729 10.6843 43.8416 11.829C44.4645 12.6045 44.7946 13.5745 44.774 14.569ZM52.0518 11.8075C52.3836 12.3305 53.0764 12.4856 53.5995 12.1539C54.1225 11.8221 54.2776 11.1292 53.9458 10.6062C53.8124 10.3977 53.6734 10.2004 53.5334 10.0021C52.9265 9.30098 52.6007 8.39991 52.6189 7.47274C52.6002 6.54531 52.9265 5.64396 53.5345 4.94336C54.4085 3.86264 54.8774 2.51047 54.8602 1.12065C54.8602 0.501764 54.3584 0 53.7395 0C53.1207 0 52.6189 0.501764 52.6189 1.12065C52.6376 2.04809 52.3113 2.94943 51.7033 3.65003C50.8293 4.73076 50.3603 6.08292 50.3776 7.47274C50.3603 8.86203 50.8288 10.2137 51.7022 11.2943C51.821 11.4624 51.9465 11.6294 52.0518 11.8075ZM36.3621 11.8075C36.6939 12.3305 37.3867 12.4856 37.9098 12.1539C38.4328 11.8221 38.5879 11.1292 38.2561 10.6062C38.1227 10.3977 37.9838 10.2004 37.8437 10.0021C37.2368 9.30098 36.911 8.39991 36.9292 7.47274C36.9105 6.54531 37.2368 5.64396 37.8448 4.94336C38.7188 3.86264 39.1878 2.51047 39.1705 1.12065C39.1705 0.501764 38.6688 0 38.0499 0C37.431 0 36.9292 0.501764 36.9292 1.12065C36.9479 2.04809 36.6216 2.94943 36.0136 3.65003C35.1396 4.73076 34.6707 6.08292 34.6879 7.47274C34.6706 8.86203 35.1391 10.2137 36.0126 11.2943C36.1313 11.4624 36.2568 11.6294 36.3621 11.8075Z"
+                            fill="" />
                     </g>
                     <defs>
-                    <clipPath id="clip0_48_377">
-                    <rect width="65" height="65" fill=""/>
-                    </clipPath>
+                        <clipPath id="clip0_48_377">
+                            <rect width="65" height="65" fill="" />
+                        </clipPath>
                     </defs>
-                    </svg>
-                    
+                </svg>
+
                 <h3 class="text-xl mb-4">Breakfast</h3>
                 <p class="text-gray-400 hover:text-gold">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur.
@@ -514,9 +542,12 @@
             <!-- Parking Space -->
             <div
                 class="text-center p-6 border border-gray-600 hover:border-gold hover:text-gold flex flex-col items-center justify-center space-y-4">
-                <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-white hover:fill-gold">
-                    <path d="M60.9375 36.5625V50.7812C60.9375 51.32 60.7235 51.8366 60.3426 52.2176C59.9616 52.5985 59.445 52.8125 58.9062 52.8125C58.3675 52.8125 57.8509 52.5985 57.4699 52.2176C57.089 51.8366 56.875 51.32 56.875 50.7812V48.75H8.125V50.7812C8.125 51.32 7.91099 51.8366 7.53006 52.2176C7.14913 52.5985 6.63247 52.8125 6.09375 52.8125C5.55503 52.8125 5.03837 52.5985 4.65744 52.2176C4.27651 51.8366 4.0625 51.32 4.0625 50.7812V36.5625C4.0625 33.2028 6.79656 30.4688 10.1562 30.4688H54.8438C58.2034 30.4688 60.9375 33.2028 60.9375 36.5625ZM10.1562 26.4062V14.2188C10.1562 13.68 10.3703 13.1634 10.7512 12.7824C11.1321 12.4015 11.6488 12.1875 12.1875 12.1875H52.8125C53.3512 12.1875 53.8679 12.4015 54.2488 12.7824C54.6297 13.1634 54.8438 13.68 54.8438 14.2188V26.4062H48.75V24.375C48.75 22.1345 46.928 20.3125 44.6875 20.3125H38.5938C36.3533 20.3125 34.5312 22.1345 34.5312 24.375V26.4062H30.4688V24.375C30.4688 22.1345 28.6467 20.3125 26.4062 20.3125H20.3125C18.072 20.3125 16.25 22.1345 16.25 24.375V26.4062H10.1562Z" fill=""/>
-                    </svg>
+                <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="fill-white hover:fill-gold">
+                    <path
+                        d="M60.9375 36.5625V50.7812C60.9375 51.32 60.7235 51.8366 60.3426 52.2176C59.9616 52.5985 59.445 52.8125 58.9062 52.8125C58.3675 52.8125 57.8509 52.5985 57.4699 52.2176C57.089 51.8366 56.875 51.32 56.875 50.7812V48.75H8.125V50.7812C8.125 51.32 7.91099 51.8366 7.53006 52.2176C7.14913 52.5985 6.63247 52.8125 6.09375 52.8125C5.55503 52.8125 5.03837 52.5985 4.65744 52.2176C4.27651 51.8366 4.0625 51.32 4.0625 50.7812V36.5625C4.0625 33.2028 6.79656 30.4688 10.1562 30.4688H54.8438C58.2034 30.4688 60.9375 33.2028 60.9375 36.5625ZM10.1562 26.4062V14.2188C10.1562 13.68 10.3703 13.1634 10.7512 12.7824C11.1321 12.4015 11.6488 12.1875 12.1875 12.1875H52.8125C53.3512 12.1875 53.8679 12.4015 54.2488 12.7824C54.6297 13.1634 54.8438 13.68 54.8438 14.2188V26.4062H48.75V24.375C48.75 22.1345 46.928 20.3125 44.6875 20.3125H38.5938C36.3533 20.3125 34.5312 22.1345 34.5312 24.375V26.4062H30.4688V24.375C30.4688 22.1345 28.6467 20.3125 26.4062 20.3125H20.3125C18.072 20.3125 16.25 22.1345 16.25 24.375V26.4062H10.1562Z"
+                        fill="" />
+                </svg>
                 <h3 class="text-xl mb-4">Parking Space</h3>
                 <p class="text-gray-400 hover:text-gold">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur.
@@ -527,10 +558,13 @@
             <!-- Swimming Pool -->
             <div
                 class="text-center p-6 border border-gray-600 hover:border-gold hover:text-gold flex flex-col items-center justify-center space-y-4">
-                <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-white hover:fill-gold">
-                    <path d="M65 10.8333V8.125C65 5.97012 64.144 3.90349 62.6202 2.37976C61.0965 0.856024 59.0299 0 56.875 0C54.7201 0 52.6535 0.856024 51.1298 2.37976C49.606 3.90349 48.75 5.97012 48.75 8.125V16.25H35.2083V8.125C35.2083 7.4067 35.4937 6.71783 36.0016 6.20992C36.5095 5.70201 37.1984 5.41667 37.9167 5.41667C38.635 5.41667 39.3238 5.70201 39.8317 6.20992C40.3397 6.71783 40.625 7.4067 40.625 8.125V10.8333H46.0417V8.125C46.0417 5.97012 45.1856 3.90349 43.6619 2.37976C42.1382 0.856024 40.0715 1.71222e-07 37.9167 1.71222e-07C35.7618 1.71222e-07 33.6952 0.856024 32.1714 2.37976C30.6477 3.90349 29.7917 5.97012 29.7917 8.125V38.3229C28.5496 38.0342 27.277 37.8978 26.002 37.9167C19.502 37.9167 19.502 40.625 13.002 40.625C6.50203 40.625 6.5 37.9167 0 37.9167V48.75C6.5 48.75 6.5 51.4583 13 51.4583C19.5 51.4583 19.5 48.75 26 48.75C32.5 48.75 32.5 51.4583 39 51.4583C45.5 51.4583 45.5 48.75 52 48.75C58.5 48.75 58.5 51.4583 65 51.4583V40.625C59.3162 40.625 58.6016 38.5541 54.1667 38.0341V8.125C54.1667 7.4067 54.452 6.71783 54.9599 6.20992C55.4678 5.70201 56.1567 5.41667 56.875 5.41667C57.5933 5.41667 58.2822 5.70201 58.7901 6.20992C59.298 6.71783 59.5833 7.4067 59.5833 8.125V10.8333H65ZM48.75 21.6667V27.0833H35.2083V21.6667H48.75ZM35.2083 40.2188V32.5H48.75V38.2054C45.238 38.9025 44.1865 40.625 39 40.625C37.7243 40.644 36.451 40.5076 35.2083 40.2188ZM39 54.1667C32.5 54.1667 32.5 51.4583 26 51.4583C19.5 51.4583 19.5 54.1667 13 54.1667C6.5 54.1667 6.5 51.4583 0 51.4583V65H65V54.1667C58.5 54.1667 58.5 51.4583 52 51.4583C45.5 51.4583 45.5 54.1667 39 54.1667Z" fill=""/>
-                    </svg>
-                    
+                <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="fill-white hover:fill-gold">
+                    <path
+                        d="M65 10.8333V8.125C65 5.97012 64.144 3.90349 62.6202 2.37976C61.0965 0.856024 59.0299 0 56.875 0C54.7201 0 52.6535 0.856024 51.1298 2.37976C49.606 3.90349 48.75 5.97012 48.75 8.125V16.25H35.2083V8.125C35.2083 7.4067 35.4937 6.71783 36.0016 6.20992C36.5095 5.70201 37.1984 5.41667 37.9167 5.41667C38.635 5.41667 39.3238 5.70201 39.8317 6.20992C40.3397 6.71783 40.625 7.4067 40.625 8.125V10.8333H46.0417V8.125C46.0417 5.97012 45.1856 3.90349 43.6619 2.37976C42.1382 0.856024 40.0715 1.71222e-07 37.9167 1.71222e-07C35.7618 1.71222e-07 33.6952 0.856024 32.1714 2.37976C30.6477 3.90349 29.7917 5.97012 29.7917 8.125V38.3229C28.5496 38.0342 27.277 37.8978 26.002 37.9167C19.502 37.9167 19.502 40.625 13.002 40.625C6.50203 40.625 6.5 37.9167 0 37.9167V48.75C6.5 48.75 6.5 51.4583 13 51.4583C19.5 51.4583 19.5 48.75 26 48.75C32.5 48.75 32.5 51.4583 39 51.4583C45.5 51.4583 45.5 48.75 52 48.75C58.5 48.75 58.5 51.4583 65 51.4583V40.625C59.3162 40.625 58.6016 38.5541 54.1667 38.0341V8.125C54.1667 7.4067 54.452 6.71783 54.9599 6.20992C55.4678 5.70201 56.1567 5.41667 56.875 5.41667C57.5933 5.41667 58.2822 5.70201 58.7901 6.20992C59.298 6.71783 59.5833 7.4067 59.5833 8.125V10.8333H65ZM48.75 21.6667V27.0833H35.2083V21.6667H48.75ZM35.2083 40.2188V32.5H48.75V38.2054C45.238 38.9025 44.1865 40.625 39 40.625C37.7243 40.644 36.451 40.5076 35.2083 40.2188ZM39 54.1667C32.5 54.1667 32.5 51.4583 26 51.4583C19.5 51.4583 19.5 54.1667 13 54.1667C6.5 54.1667 6.5 51.4583 0 51.4583V65H65V54.1667C58.5 54.1667 58.5 51.4583 52 51.4583C45.5 51.4583 45.5 54.1667 39 54.1667Z"
+                        fill="" />
+                </svg>
+
                 <h3 class="text-xl mb-4">Swimming Pool</h3>
                 <p class="text-gray-400 hover:text-gold">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam non odio in efficitur.
@@ -636,7 +670,8 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="py-12 text-center relative" style="background-image: url('./images/riewsbg.png?height=1080&width=1920');">
+    <section class="py-12 text-center relative"
+        style="background-image: url('./images/riewsbg.png?height=1080&width=1920');">
         <div class="absolute inset-0 bg-black bg-opacity-80"></div>
         <div class="relative max-w-6xl mx-auto px-4 z-50">
             <h2 class="z-10 text-start text-md text-white Playfair mb-2 ml-[16%]">What says For customer</h2>
@@ -655,48 +690,50 @@
                             </div>
                             <div>
                                 <div class="text-amber-500 text-xl ">★★★★★</div>
-                                <p class="mt-4 max-w-lg outfit">Exceptional service and stunning views. The staff went above
+                                <p class="mt-4 max-w-lg outfit">Exceptional service and stunning views. The staff went
+                                    above
                                     and beyond to make our stay memorable. The facilities are world-class and the
                                     attention to detail is impressive.</p>
                                 <div class="mt-2 md:mt-4 font-bold text-sm md:text-md outfit">Jignesh parmar</div>
                                 <div class="text-sm opacity-70 text-gold outfit">Guest Review</div>
                             </div>
                         </div>
-                        </div>
                     </div>
-                    <div class="testimonial hidden">
-                        <div class="flex flex-col-2 flex-row items-center gap-6 text-left">
-                            <div class="w-96 h-52 md:w-48 md:h-60 overflow-hidden">
-                                <img src="./images/client2.jpg" alt="Sarah Johnson" class="object-cover w-full h-full">
-                            </div>
-                            <div>
-                                <div class="text-amber-500 text-xl ">★★★★★</div>
-                                <p class="mt-4 max-w-lg outfit">Exceptional service and stunning views. The staff went above
-                                    and beyond to make our stay memorable. The facilities are world-class and the
-                                    attention to detail is impressive.</p>
-                                <div class="mt-2 md:mt-4 font-bold text-sm md:text-md outfit ">Jignesh parmar</div>
-                                <div class="text-sm opacity-70 text-gold outfit">Guest Review</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial hidden">
-                        <div class="flex flex-col-2 flex-row items-center gap-6 text-left">
-                            <div class="w-96 h-52 md:w-48 md:h-60 overflow-hidden">
-                                <img src="./images/client.png" alt="Sarah Johnson" class="object-cover w-full h-full">
-                            </div>
-                            <div>
-                                <div class="text-amber-500 text-xl ">★★★★★</div>
-                                <p class="mt-4 max-w-lg outfit">Exceptional service and stunning views. The staff went above
-                                    and beyond to make our stay memorable. The facilities are world-class and the
-                                    attention to detail is impressive.</p>
-                                <div class="mt-2 md:mt-4 font-bold text-sm md:text-md outfit ">Jignesh parmar</div>
-                                <div class="text-sm opacity-70 text-gold outfit">Guest Review</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div><img src="./images/Vector.png" alt="Vector" class="hidden md:flex absolute md:right-10 md:bottom-5 md:w-20"></div>
                 </div>
+                <div class="testimonial hidden">
+                    <div class="flex flex-col-2 flex-row items-center gap-6 text-left">
+                        <div class="w-96 h-52 md:w-48 md:h-60 overflow-hidden">
+                            <img src="./images/client2.jpg" alt="Sarah Johnson" class="object-cover w-full h-full">
+                        </div>
+                        <div>
+                            <div class="text-amber-500 text-xl ">★★★★★</div>
+                            <p class="mt-4 max-w-lg outfit">Exceptional service and stunning views. The staff went above
+                                and beyond to make our stay memorable. The facilities are world-class and the
+                                attention to detail is impressive.</p>
+                            <div class="mt-2 md:mt-4 font-bold text-sm md:text-md outfit ">Jignesh parmar</div>
+                            <div class="text-sm opacity-70 text-gold outfit">Guest Review</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial hidden">
+                    <div class="flex flex-col-2 flex-row items-center gap-6 text-left">
+                        <div class="w-96 h-52 md:w-48 md:h-60 overflow-hidden">
+                            <img src="./images/client.png" alt="Sarah Johnson" class="object-cover w-full h-full">
+                        </div>
+                        <div>
+                            <div class="text-amber-500 text-xl ">★★★★★</div>
+                            <p class="mt-4 max-w-lg outfit">Exceptional service and stunning views. The staff went above
+                                and beyond to make our stay memorable. The facilities are world-class and the
+                                attention to detail is impressive.</p>
+                            <div class="mt-2 md:mt-4 font-bold text-sm md:text-md outfit ">Jignesh parmar</div>
+                            <div class="text-sm opacity-70 text-gold outfit">Guest Review</div>
+                        </div>
+                    </div>
+                </div>
+                <div><img src="./images/Vector.png" alt="Vector"
+                        class="hidden md:flex absolute md:right-10 md:bottom-5 md:w-20"></div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -781,7 +818,8 @@
                                 fill="white" />
                         </svg>
 
-                        <span class="hover:text-gold">2nd Floor, Rishi House, Near ICICI Bank, Kargil Chowk Piplod Surat, 395007</span>
+                        <span class="hover:text-gold">2nd Floor, Rishi House, Near ICICI Bank, Kargil Chowk Piplod
+                            Surat, 395007</span>
                     </li>
                     <li class="flex items-center space-x-2">
                         <svg width="25" height="25" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -944,41 +982,41 @@
 
     </script>
 
-<script>
-    const testimonials = document.querySelectorAll('.testimonial');
-    const dotsContainer = document.querySelector('.navigation-dots');
-    let currentIndex = 0;
+    <script>
+        const testimonials = document.querySelectorAll('.testimonial');
+        const dotsContainer = document.querySelector('.navigation-dots');
+        let currentIndex = 0;
 
-    // Create navigation dots
-    testimonials.forEach((_, index) => {
-        const dot = document.createElement('div');
-        dot.className = 'w-2.5 h-2.5 rounded-full bg-white cursor-pointer transition-colors border-2 border-gold hidden md:flex ';
-        dot.addEventListener('click', () => showTestimonial(index));
-        dotsContainer.appendChild(dot);
-    });
+        // Create navigation dots
+        testimonials.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.className = 'w-2.5 h-2.5 rounded-full bg-white cursor-pointer transition-colors border-2 border-gold hidden md:flex ';
+            dot.addEventListener('click', () => showTestimonial(index));
+            dotsContainer.appendChild(dot);
+        });
 
-    const dots = document.querySelectorAll('.navigation-dots > div');
+        const dots = document.querySelectorAll('.navigation-dots > div');
 
-    function showTestimonial(index) {
-        testimonials[currentIndex].classList.add('hidden');
-        testimonials[currentIndex].classList.remove('block');
-        dots[currentIndex].classList.remove('bg-[#E5BA73]');
-        currentIndex = index;
-        testimonials[currentIndex].classList.remove('hidden');
-        testimonials[currentIndex].classList.add('block');
-        dots[currentIndex].classList.add('bg-[#E5BA73]');
-    }
+        function showTestimonial(index) {
+            testimonials[currentIndex].classList.add('hidden');
+            testimonials[currentIndex].classList.remove('block');
+            dots[currentIndex].classList.remove('bg-[#E5BA73]');
+            currentIndex = index;
+            testimonials[currentIndex].classList.remove('hidden');
+            testimonials[currentIndex].classList.add('block');
+            dots[currentIndex].classList.add('bg-[#E5BA73]');
+        }
 
-    function nextTestimonial() {
-        showTestimonial((currentIndex + 1) % testimonials.length);
-    }
+        function nextTestimonial() {
+            showTestimonial((currentIndex + 1) % testimonials.length);
+        }
 
-    // Initialize
-    showTestimonial(0);
+        // Initialize
+        showTestimonial(0);
 
-    // Auto-rotate testimonials
-    setInterval(nextTestimonial, 5000);
-</script>
+        // Auto-rotate testimonials
+        setInterval(nextTestimonial, 5000);
+    </script>
 
 
 </body>
