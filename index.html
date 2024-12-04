@@ -636,41 +636,62 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="testimonial-bg  flex items-center justify-center px-4 md:px-8">
-        <div class="relative container mx-auto max-w-4xl">
-            <div class="text-center mb-8">
-                <p class="absolute text-white text-sm  left-4 md:left-10 Playfair">
-                    What our customers say
-                </p>
-                <h2 class="absolute left-4 md:left-10 mt-6 text-2xl md:text-3xl font-bold Playfair">
-                    <span class="text-[#E6B980]">What Clients</span>
-                    <span class="text-white">Say?</span>
-                </h2>
+    <section class="py-12 text-center relative" style="background-image: url('./images/riewsbg.png?height=1080&width=1920');">
+        <div class="absolute inset-0 bg-black bg-opacity-80"></div>
+        <div class="relative max-w-6xl mx-auto px-4 z-50">
+            <h2 class="z-10 text-start text-md text-white Playfair mb-2 ml-[16%]">What says For customer</h2>
+            <h1 class="text-start text-3xl font-bold mb-8 ml-[16%] text-gold">
+                What Client's <span class="text-white">Say ?</span>
+            </h1>
+            <div class="flex justify-end mt-8">
+                <div class="flex space-x-2 navigation-dots"></div>
             </div>
-
-            <div class=" relative">
-                <!-- Testimonial 1 -->
-                <div>
-                    <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8 p-10 mr-24 md:p-10">
-                        <div class="w-20 h-25 md:w-40 md:h-60 flex-shrink-0 ">
-                            <img src="./images/client.png" alt="Client"
-                                class="w-full h-full object-cover top-10 shadow-lg ">
-                        </div>
-                        <div class="text-white max-w-2xl">
-                            <div class="flex gap-1 mb-4">
-                                <i class="fas fa-star text-yellow-400"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
-                                <i class="fas fa-star text-yellow-400"></i>
+            <div class="relative max-w-3xl mx-auto">
+                <div class="testimonial-carousel space-y-8">
+                    <div class="testimonial active hidden">
+                        <div class="flex flex-col-2 flex-row items-center gap-6 text-left">
+                            <div class="w-96 h-52 md:w-48 md:h-60 overflow-hidden">
+                                <img src="./images/client.png" alt="Sarah Johnson" class="object-cover w-full h-full">
                             </div>
-                            <p class="text-sm md:text-base mb-6 outfit">
-                                The Blue Mountain Resorts and hospitality service is outstanding. I always feel safe
-                                traveling with my family. It’s a 100% worthwhile membership. Thanks to the Blue Mountain
-                                Team and staff.
-                            </p>
-                            <h3 class="text-lg md:text-xl font-semibold mb-1 outfit">Jignesh Parmar</h3>
-                            <p class="text-[#E6B980] outfit">Guest Review</p>
+                            <div>
+                                <div class="text-[#E5BA73] text-xl ">★★★★★</div>
+                                <p class="mt-4 max-w-lg outfit">Exceptional service and stunning views. The staff went above
+                                    and beyond to make our stay memorable. The facilities are world-class and the
+                                    attention to detail is impressive.</p>
+                                <div class="mt-2 md:mt-4 font-bold text-sm md:text-md outfit">Jignesh parmar</div>
+                                <div class="text-sm opacity-70 text-gold outfit">Guest Review</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="testimonial hidden">
+                        <div class="flex flex-col-2 flex-row items-center gap-6 text-left">
+                            <div class="w-96 h-52 md:w-48 md:h-60 overflow-hidden">
+                                <img src="./images/client2.jpg" alt="Sarah Johnson" class="object-cover w-full h-full">
+                            </div>
+                            <div>
+                                <div class="text-[#E5BA73] text-xl ">★★★★★</div>
+                                <p class="mt-4 max-w-lg outfit">Exceptional service and stunning views. The staff went above
+                                    and beyond to make our stay memorable. The facilities are world-class and the
+                                    attention to detail is impressive.</p>
+                                <div class="mt-2 md:mt-4 font-bold text-sm md:text-md outfit ">Jignesh parmar</div>
+                                <div class="text-sm opacity-70 text-gold outfit">Guest Review</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial hidden">
+                        <div class="flex flex-col-2 flex-row items-center gap-6 text-left">
+                            <div class="w-96 h-52 md:w-48 md:h-60 overflow-hidden">
+                                <img src="./images/client.png" alt="Sarah Johnson" class="object-cover w-full h-full">
+                            </div>
+                            <div>
+                                <div class="text-[#E5BA73] text-xl ">★★★★★</div>
+                                <p class="mt-4 max-w-lg outfit">Exceptional service and stunning views. The staff went above
+                                    and beyond to make our stay memorable. The facilities are world-class and the
+                                    attention to detail is impressive.</p>
+                                <div class="mt-2 md:mt-4 font-bold text-sm md:text-md outfit ">Jignesh parmar</div>
+                                <div class="text-sm opacity-70 text-gold outfit">Guest Review</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -921,6 +942,42 @@
         }
 
     </script>
+
+<script>
+    const testimonials = document.querySelectorAll('.testimonial');
+    const dotsContainer = document.querySelector('.navigation-dots');
+    let currentIndex = 0;
+
+    // Create navigation dots
+    testimonials.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.className = 'w-2.5 h-2.5 rounded-full bg-white cursor-pointer transition-colors border-2 border-gold hidden md:flex ';
+        dot.addEventListener('click', () => showTestimonial(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll('.navigation-dots > div');
+
+    function showTestimonial(index) {
+        testimonials[currentIndex].classList.add('hidden');
+        testimonials[currentIndex].classList.remove('block');
+        dots[currentIndex].classList.remove('bg-[#E5BA73]');
+        currentIndex = index;
+        testimonials[currentIndex].classList.remove('hidden');
+        testimonials[currentIndex].classList.add('block');
+        dots[currentIndex].classList.add('bg-[#E5BA73]');
+    }
+
+    function nextTestimonial() {
+        showTestimonial((currentIndex + 1) % testimonials.length);
+    }
+
+    // Initialize
+    showTestimonial(0);
+
+    // Auto-rotate testimonials
+    setInterval(nextTestimonial, 5000);
+</script>
 
 
 </body>
