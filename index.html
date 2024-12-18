@@ -678,7 +678,7 @@
                 What Client's <span class="text-white">Say ?</span>
             </h1>
             <div class="flex justify-end mt-8">
-                <div class="flex space-x-2 navigation-dots"></div>
+                <div class="flex space-x-2 navigation-dots "></div>
             </div>
             <div class="relative max-w-3xl mx-auto">
                 <div class="testimonial-carousel space-y-8">
@@ -988,7 +988,7 @@
         // Create navigation dots
         testimonials.forEach((_, index) => {
             const dot = document.createElement('div');
-            dot.className = 'w-2.5 h-2.5 rounded-full bg-white cursor-pointer transition-colors border-2 border-gold hidden md:flex ';
+            dot.className = 'w-2.5 h-2.5 rounded-full bg-white cursor-pointer transition-colors border-2 border-gold hidden md:flex hover:bg-gold/20 ';
             dot.addEventListener('click', () => showTestimonial(index));
             dotsContainer.appendChild(dot);
         });
